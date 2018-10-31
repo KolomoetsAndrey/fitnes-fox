@@ -1435,6 +1435,36 @@ html {
   .mobile_footer .card a:hover {
     color: #df1e30;
   }
+  .mobile_footer .card ul {
+    padding-left: 15px;
+  }
+  .mobile_footer .card ul li {
+    list-style-type: none;
+  }
+  .mobile_footer .card ul li img {
+    width: 20px;
+    margin: 0 4px 0 0;
+  }
+  .mobile_footer .footer_logo {
+    color: #fff;
+    background-color: #000;
+    padding: 25px 0 25px 0;
+  }
+  .mobile_footer .footer_logo .slogan {
+    color: #fff;
+    padding-bottom: 15px;
+    font-size: 14px;
+  }
+  .mobile_footer .footer_logo .copyright {
+    font-weight: 800;
+    font-size: 14px;
+  }
+  .mobile_footer .footer_logo .author {
+    font-size: 14px;
+  }
+  .mobile_footer .footer_logo a {
+    color: #fff;
+  }
 }
 @media only screen and (max-width: 767px) {
   .slider .carousel-inner .carousel-item {
