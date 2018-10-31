@@ -1411,6 +1411,10 @@ html {
   }
   .mobile_footer {
     display: inherit;
+    background-color: #000;
+  }
+  .mobile_footer .opened {
+    background-color: #fff;
   }
   .mobile_footer .container {
     min-width: 100%;
