@@ -1413,7 +1413,7 @@ html {
     display: inherit;
     background-color: #000;
   }
-  .mobile_footer .opened {
+  .mobile_footer .open_it {
     background-color: #fff;
   }
   .mobile_footer .container {
@@ -1432,9 +1432,6 @@ html {
   .mobile_footer .card .card-header {
     background-color: #000;
     color: #fff;
-  }
-  .mobile_footer .card h3 {
-    cursor: pointer;
   }
   .mobile_footer .card a {
     color: #000;
