@@ -372,6 +372,11 @@ html {
   margin-top: 25px;
   margin-bottom: 50px;
 }
+.wrapper .filter_wrapper .col-md-1,
+.wrapper .filter_wrapper .col-md-2 {
+  padding-right: 2px;
+  padding-left: 2px;
+}
 .wrapper .form-control {
   border: 1px solid #808080;
   border-radius: 0;
@@ -1405,6 +1410,12 @@ html {
   }
   .social .sociality {
     border-right: none;
+  }
+  .wrapper .category_items .thumb-wrapper .thumb-content .btn {
+    padding: 7px 10px;
+  }
+  .wrapper .category_items .thumb-wrapper .thumb-content .eml {
+    display: none;
   }
   .desktop_footer {
     display: none;
