@@ -139,6 +139,7 @@ html {
 .menu-mobile {
   display: none;
   padding: 20px;
+  color: #df1e30;
 }
 .menu-mobile img {
   width: 60%;
