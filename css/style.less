@@ -468,6 +468,10 @@ body, html {
     margin-top: 25px;
     margin-bottom: 25px;
 
+    .mobile_image_slider {
+        display: none;
+    }
+
     h2 {
         margin: 0 0 10px 0;
     }
@@ -530,9 +534,55 @@ body, html {
     }
 
     .by_it {
-        .col-md-3, .col-md-4, .col-md-5 {
-            padding: 0 0 0 0;
-            margin-right: -25px;
+
+        .input-group {
+            width: 50%;
+        }
+
+        .col-md-2, .col-md-3, .col-md-4, .col-md-5 {
+            padding: 0;
+            margin: 0;
+
+            /* Plus-Minus */
+            .spinner input {
+                text-align: right;
+              }
+              
+              .input-group-btn-vertical {
+                position: relative;
+                white-space: nowrap;
+                width: 2%;
+                vertical-align: middle;
+                display: table-cell;
+              }
+              
+              .input-group-btn-vertical > .btn {
+                display: block;
+                float: none;
+                width: 100%;
+                max-width: 100%;
+                padding: 12px 10px 12px 15px;
+                margin-left: -1px;
+                position: relative;
+                border-radius: 0;
+              }
+              
+              .input-group-btn-vertical > .btn:first-child {
+                border-top-right-radius: 0;
+              }
+              
+              .input-group-btn-vertical > .btn:last-child {
+                margin-top: -2px;
+                border-bottom-right-radius: 0;
+              }
+              
+              .input-group-btn-vertical i {
+                position: absolute;
+                top: 0;
+                left: 4px;
+                padding: 5px 5px 5px 2px;
+              }
+            /* Plus-Minus End */
 
             .form-control {
                 width: 73%;
@@ -591,6 +641,8 @@ body, html {
     }
 
     .like_it {
+        margin-top: 15px;
+
         a {
             text-decoration: none;
         }
@@ -626,7 +678,7 @@ body, html {
 
     .item_image {
         border: 1px solid #333;
-        height: fit-content;
+        height: 100%;
 
         .big_img {
             width: 100%;
@@ -1528,6 +1580,12 @@ body, html {
         }
     }
 
+    .breadcrumbs {
+        .breadcrumb {
+            font-size: 12px;
+        }
+    }
+
     .category_items {
         .thumb-wrapper {
             .img-box {
@@ -1720,6 +1778,16 @@ body, html {
             .filters {
                 font-size: 10px;
             }
+        }
+    }
+
+    .item_card {
+        .item_images, .item_image {
+            display: none;
+        }
+
+        .mobile_image_slider {
+            display: block;
         }
     }
 }
