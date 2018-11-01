@@ -35,16 +35,16 @@ body, html {
 
     .telephone {
         .code {
-            font-size: 26px;
+            font-size: 24px;
         }
 
         .first {
             padding-right: 20px;
         }
 
-        margin-top: 3px;
+        margin-top: 8px;
         text-align: left;
-        font-size: 30px;
+        font-size: 22px;
     }
 
     .authotisation {
@@ -74,7 +74,7 @@ body, html {
 
     .slogan {
         margin: -10px 0px 0px 2px;
-        font-size: 13px;
+        font-size: 16px;
         font-weight: 600;
         color: #444;
     }
@@ -120,8 +120,8 @@ body, html {
     }
 
     .heart {
-        width: 50px;
-        margin: 31px 0 0 0;
+        width: 40px;
+        margin: 35px 0 0 35px;
     }
     
     .btn {
@@ -134,8 +134,8 @@ body, html {
     }
 
     .cart {
-        width: 50px;
-        margin: 31px 0 0 0;
+        width: 40px;
+        margin: 35px 0 0 0;
     }
 
     .badge {
@@ -232,7 +232,7 @@ body, html {
 .menu_tab {
     color: #000;
     text-transform: uppercase;
-    font-size: 21px;
+    font-size: 19px;
     font-weight: 700;
 }
 
@@ -335,7 +335,7 @@ body, html {
     background-color: #f1f1f1;
     border-top: 1px solid #6c6c6c;
     text-transform: uppercase;
-    font-size: 18px;
+    font-size: 15px;
     margin-top: 35px;
     padding: 10px 0 10px 0;
 
@@ -790,6 +790,47 @@ body, html {
     }
 
     .item_in_cart {
+        /* Plus-Minus */
+        .spinner input {
+            text-align: right;
+          }
+          
+          .input-group-btn-vertical {
+            position: relative;
+            white-space: nowrap;
+            width: 2%;
+            vertical-align: middle;
+            display: table-cell;
+          }
+          
+          .input-group-btn-vertical > .btn {
+            display: block;
+            float: none;
+            width: 100%;
+            max-width: 100%;
+            padding: 12px 10px 12px 15px;
+            margin-left: -1px;
+            position: relative;
+            border-radius: 0;
+          }
+          
+          .input-group-btn-vertical > .btn:first-child {
+            border-top-right-radius: 0;
+          }
+          
+          .input-group-btn-vertical > .btn:last-child {
+            margin-top: -2px;
+            border-bottom-right-radius: 0;
+          }
+          
+          .input-group-btn-vertical i {
+            position: absolute;
+            top: 0;
+            left: 4px;
+            padding: 5px 5px 5px 2px;
+          }
+        /* Plus-Minus End */
+
         img {
             width: 105px;
             margin: 10px;
@@ -1002,7 +1043,7 @@ body, html {
 /* Carousel */
 .carousel, .wrapper, .new_items_mobile, .hits_items_mobile  {
     .item {
-        max-height: 370px;
+        max-height: 430px;
         text-align: center;
         overflow: hidden;
 
@@ -1012,7 +1053,7 @@ body, html {
     }
 
     .img-box {
-        height: 210px;
+        height: 270px;
         width: 100%;
         position: relative;
     }
@@ -1029,6 +1070,8 @@ body, html {
         border: 1px solid #cccccc;
         padding: 10px;
         transition: ease-in-out .2s;
+        height: 100%;
+        width: 100%;
     }
 
     img:hover {
@@ -1126,7 +1169,7 @@ body, html {
     }
 
     .carousel-control.left i {
-        margin-left: -3px;
+        margin-left: -15px;
     }
 
     .carousel-control.left i {
