@@ -417,6 +417,9 @@ html {
   color: #b3b3b3;
   margin: 10px 0 10px 0;
 }
+.item_card h3 .currency {
+  font-size: 22px;
+}
 .item_card h3 .red_price {
   color: #df1e30;
 }
@@ -446,11 +449,12 @@ html {
   background: #fff;
   border: 1px solid #c6c6c6;
   color: #6c6c6c;
-  font-size: 18px;
+  font-size: 16px;
 }
 .item_card .variations .btn-group .btn-primary:not(:disabled):not(.disabled):active,
 .item_card .variations .btn-group .btn-primary:not(:disabled):not(.disabled).active {
   background-color: #fff;
+  color: #000;
   font-weight: 100;
   border: 1px solid #000;
 }
