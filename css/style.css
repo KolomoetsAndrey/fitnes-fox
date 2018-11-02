@@ -410,6 +410,7 @@ html {
 }
 .item_card h2 {
   margin: 0 0 10px 0;
+  font-size: 26px;
 }
 .item_card h3 {
   font-size: 28px;
@@ -444,13 +445,13 @@ html {
   border-radius: 0;
   background: #fff;
   border: 1px solid #c6c6c6;
-  color: #000;
-  font-size: 21px;
+  color: #6c6c6c;
+  font-size: 18px;
 }
 .item_card .variations .btn-group .btn-primary:not(:disabled):not(.disabled):active,
 .item_card .variations .btn-group .btn-primary:not(:disabled):not(.disabled).active {
   background-color: #fff;
-  font-weight: 800;
+  font-weight: 100;
   border: 1px solid #000;
 }
 .item_card .variations .btn-group input {
@@ -608,8 +609,8 @@ html {
 .item_card .item_images li {
   list-style: none;
   text-align: center;
-  margin: 0 10px 3px 0;
-  padding: 5px;
+  margin: 0 10px 3px 10px;
+  padding: 10px 0 10px 0;
   border: 1px solid #f1f1f1;
   transition: ease-in-out 0.2s;
 }
@@ -617,7 +618,7 @@ html {
   border: 1px solid #df1e30;
 }
 .item_card .item_images .small_img {
-  width: 87%;
+  width: 65%;
 }
 .item_card .item_image {
   border: 1px solid #333;
