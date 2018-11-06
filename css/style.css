@@ -954,7 +954,8 @@ html {
 .wrapper .item,
 .new_items_mobile .item,
 .hits_items_mobile .item {
-  max-height: 430px;
+  max-height: 440px;
+  padding-top: 5px;
   text-align: center;
   overflow: hidden;
 }
@@ -982,17 +983,10 @@ html {
   margin: 0 auto;
   left: 0;
   right: 0;
-  border: 1px solid #cccccc;
   padding: 10px;
   transition: ease-in-out 0.2s;
   height: 100%;
   width: 100%;
-}
-.carousel img:hover,
-.wrapper img:hover,
-.new_items_mobile img:hover,
-.hits_items_mobile img:hover {
-  border: 1px solid #df1e30;
 }
 .carousel h4,
 .wrapper h4,
@@ -1017,10 +1011,10 @@ html {
   margin-right: 5px;
   line-height: 16px;
 }
-.carousel .btn a.bitton_cart,
-.wrapper .btn a.bitton_cart,
-.new_items_mobile .btn a.bitton_cart,
-.hits_items_mobile .btn a.bitton_cart {
+.carousel .btn .button_cart,
+.wrapper .btn .button_cart,
+.new_items_mobile .btn .button_cart,
+.hits_items_mobile .btn .button_cart {
   width: 25px;
 }
 .carousel .btn i,
@@ -1070,6 +1064,13 @@ html {
 .new_items_mobile .thumb-wrapper,
 .hits_items_mobile .thumb-wrapper {
   text-align: center;
+  transition: ease-in-out 0.2s;
+}
+.carousel .thumb-wrapper:hover,
+.wrapper .thumb-wrapper:hover,
+.new_items_mobile .thumb-wrapper:hover,
+.hits_items_mobile .thumb-wrapper:hover {
+  box-shadow: 0 0 0 1px #c6c6c6;
 }
 .carousel .thumb-content,
 .wrapper .thumb-content,

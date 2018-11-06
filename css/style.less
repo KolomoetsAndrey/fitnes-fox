@@ -1040,7 +1040,8 @@ body, html {
 /* Carousel */
 .carousel, .wrapper, .new_items_mobile, .hits_items_mobile  {
     .item {
-        max-height: 430px;
+        max-height: 440px;
+        padding-top: 5px;
         text-align: center;
         overflow: hidden;
 
@@ -1062,15 +1063,10 @@ body, html {
         margin: 0 auto;
         left: 0;
         right: 0;
-        border: 1px solid #cccccc;
         padding: 10px;
         transition: ease-in-out .2s;
         height: 100%;
         width: 100%;
-    }
-
-    img:hover {
-        border: 1px solid #df1e30;
     }
 
     h4 {
@@ -1091,7 +1087,7 @@ body, html {
         margin-right: 5px;
         line-height: 16px;
 
-        a.bitton_cart {
+        .button_cart {
             width: 25px;
         }
 
@@ -1120,6 +1116,11 @@ body, html {
 
     .thumb-wrapper {
         text-align: center;
+        transition: ease-in-out .2s;
+    }
+
+    .thumb-wrapper:hover {
+        box-shadow: 0 0 0 1px #c6c6c6;
     }
 
     .thumb-content {
