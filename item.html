@@ -17,6 +17,8 @@
     <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
         crossorigin="anonymous">
+        <link href="https://unpkg.com/ionicons@4.4.6/dist/css/ionicons.min.css" rel="stylesheet">
+
     <!-- JS -->
     <script src="js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
@@ -157,7 +159,7 @@
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="#">Каталог товаров</a></li>
                             <li class="breadcrumb-item"><a href="#">Мужская</a></li>
-                            <li class="breadcrumb-item" aria-current="page">Футболки</li>
+                            <li class="breadcrumb-item"><a href="#">Футболки</a></li>
                             <li class="breadcrumb-item active" aria-current="page">Рубашка поло Nike Grey XXL</li>
                         </ol>
                     </nav>
@@ -177,7 +179,7 @@
                         <li><a href="#"><img class="small_img" src="images/items/t-shirt.png" alt=""></a></li>
                     </ul>
                 </div>
-                <div class="col-md-4 item_image">
+                <div class="col-md-5 item_image">
                     <img class="big_img" src="images/items/t-shirt-big.png" alt="">
                 </div>
                 <div class="col-12 mobile_image_slider">
@@ -200,13 +202,13 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-5">
                     <img class="item_logo" src="images/brands/nike.png" alt="">
                     <h2>Рубашка поло Nike Grey XXL</h2>
                     <p>Код товара:<span class="code">524873</span></p>
                     <h3><strike>256 <span class="currency">грн</span></strike> <span class="red_price">198 <span class="currency">грн</span></span></h3>
                     <div class="row">
-                        <div class="col-md-6 variations">
+                        <div class="col-md-8 variations">
                             <p>Выбрать размер</p>
                             <form class="form-horizontal " method="post" action="">
                                 <div class="form-group">
@@ -226,11 +228,17 @@
                                         <label class="btn btn-primary">
                                             <input type="radio" name="options" id="option5" autocomplete="off">XXL
                                         </label>
+                                        <label class="btn btn-primary">
+                                            <input type="radio" name="options" id="option6" autocomplete="off">3XL
+                                        </label>
+                                        <label class="btn btn-primary">
+                                            <input type="radio" name="options" id="option7" autocomplete="off">4XL
+                                        </label>
                                     </div>
                                 </div>
                             </form>
                         </div>
-                        <div class="col-md-6 size_table_link">
+                        <div class="col-md-4 size_table_link">
                             <a href="#size_table">Таблица размеров</a>
                         </div>
                     </div>
@@ -239,8 +247,8 @@
                             <div class="input-group spinner">
                                     <input type="text" class="form-control" value="1" min="0" max="100">
                                     <div class="input-group-btn-vertical">
-                                      <button class="btn btn-default" type="button"><i class="fas fa-plus"></i></button>
-                                      <button class="btn btn-default" type="button"><i class="fas fa-minus"></i></i></button>
+                                      <button class="btn btn-default" type="button"><ion-icon name="add"></ion-icon></button>
+                                      <button class="btn btn-default" type="button"><ion-icon name="remove"></ion-icon></button>
                                     </div>
                             </div>
                         </div>
@@ -288,7 +296,7 @@
                 <div class="col-md-6 size_table" id="size_table">
                     <h5>Таблица размеров</h5>
                     <table class="table size_table_title">
-                            <thead class="thead-dark">
+                            <thead class="thead-light">
                               <tr class="table_head">
                                 <th scope="col">Международный размер</th>
                                 <th scope="col">Обхват груди (см)</th>
@@ -362,7 +370,7 @@
                                             </div>
                                             <div class="thumb-content">
                                                 <a href="#"><h4>Рубашка поло Nike Grey XXL</h4></a>
-                                                <p class="item-price"><strike>256 грн.</strike><span>198 грн.</span></p>
+                                                <p class="item-price"><strike>256 грн</strike><span>198 грн</span></p>
                                                 <div class="add_to_cart">
                                                     <a href="#" class="btn"><i class="fas fa-shopping-cart"></i>Купить</a>
                                                     <a href="#" class="hrt"><i class="far fa-heart"></i></a>
@@ -380,7 +388,7 @@
                                             </div>
                                             <div class="thumb-content">
                                                 <a href="#"><h4>Рубашка поло Nike Grey XXL</h4></a>
-                                                <p class="item-price"><strike>256 грн.</strike><span>198 грн.</span></p>
+                                                <p class="item-price"><strike>256 грн</strike><span>198 грн</span></p>
                                                 <div class="add_to_cart">
                                                     <a href="#" class="btn"><i class="fas fa-shopping-cart"></i>Купить</a>
                                                     <a href="#" class="hrt"><i class="far fa-heart"></i></a>
@@ -398,7 +406,7 @@
                                             </div>
                                             <div class="thumb-content">
                                                 <a href="#"><h4>Рубашка поло Nike Grey XXL</h4></a>
-                                                <p class="item-price"><strike>256 грн.</strike><span>198 грн.</span></p>
+                                                <p class="item-price"><strike>256 грн</strike><span>198 грн</span></p>
                                                 <div class="add_to_cart">
                                                     <a href="#" class="btn"><i class="fas fa-shopping-cart"></i>Купить</a>
                                                     <a href="#" class="hrt"><i class="far fa-heart"></i></a>
@@ -416,7 +424,7 @@
                                             </div>
                                             <div class="thumb-content">
                                                 <a href="#"><h4>Рубашка поло Nike Grey XXL</h4></a>
-                                                <p class="item-price"><strike>256 грн.</strike><span>198 грн.</span></p>
+                                                <p class="item-price"><strike>256 грн</strike><span>198 грн</span></p>
                                                 <div class="add_to_cart">
                                                     <a href="#" class="btn"><i class="fas fa-shopping-cart"></i>Купить</a>
                                                     <a href="#" class="hrt"><i class="far fa-heart"></i></a>
@@ -438,7 +446,7 @@
                                             </div>
                                             <div class="thumb-content">
                                                 <a href="#"><h4>Рубашка поло Nike Grey XXL</h4></a>
-                                                <p class="item-price"><strike>256 грн.</strike><span>198 грн.</span></p>
+                                                <p class="item-price"><strike>256 грн</strike><span>198 грн</span></p>
                                                 <div class="add_to_cart">
                                                     <a href="#" class="btn"><i class="fas fa-shopping-cart"></i>Купить</a>
                                                     <a href="#" class="hrt"><i class="far fa-heart"></i></a>
@@ -456,7 +464,7 @@
                                             </div>
                                             <div class="thumb-content">
                                                 <a href="#"><h4>Рубашка поло Nike Grey XXL</h4></a>
-                                                <p class="item-price"><strike>256 грн.</strike><span>198 грн.</span></p>
+                                                <p class="item-price"><strike>256 грн</strike><span>198 грн</span></p>
                                                 <div class="add_to_cart">
                                                     <a href="#" class="btn"><i class="fas fa-shopping-cart"></i>Купить</a>
                                                     <a href="#" class="hrt"><i class="far fa-heart"></i></a>
@@ -474,7 +482,7 @@
                                             </div>
                                             <div class="thumb-content">
                                                 <a href="#"><h4>Рубашка поло Nike Grey XXL</h4></a>
-                                                <p class="item-price"><strike>256 грн.</strike><span>198 грн.</span></p>
+                                                <p class="item-price"><strike>256 грн</strike><span>198 грн</span></p>
                                                 <div class="add_to_cart">
                                                     <a href="#" class="btn"><i class="fas fa-shopping-cart"></i>Купить</a>
                                                     <a href="#" class="hrt"><i class="far fa-heart"></i></a>
@@ -492,7 +500,7 @@
                                             </div>
                                             <div class="thumb-content">
                                                 <a href="#"><h4>Рубашка поло Nike Grey XXL</h4></a>
-                                                <p class="item-price"><strike>256 грн.</strike><span>198 грн.</span></p>
+                                                <p class="item-price"><strike>256 грн</strike><span>198 грн</span></p>
                                                 <div class="add_to_cart">
                                                     <a href="#" class="btn"><i class="fas fa-shopping-cart"></i>Купить</a>
                                                     <a href="#" class="hrt"><i class="far fa-heart"></i></a>
@@ -729,5 +737,6 @@
         window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')
     </script>
     <script src="js/megamenu.js"></script>
+    <script src="https://unpkg.com/ionicons@4.4.6/dist/ionicons.js"></script>
 </body>
 </html>

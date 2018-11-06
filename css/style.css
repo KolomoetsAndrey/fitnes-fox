@@ -370,6 +370,9 @@ html {
 .breadcrumbs .breadcrumb {
   background-color: transparent;
 }
+.breadcrumbs .breadcrumb .breadcrumb-item a {
+  color: #6c6c6c;
+}
 /* Wrapper */
 .wrapper .titles_top {
   border-bottom: 2px solid #6c6c6c;
@@ -410,18 +413,19 @@ html {
 }
 .item_card .size_table_link {
   margin-bottom: 5px;
+  font-size: 14px;
 }
 .item_card .mobile_image_slider {
   display: none;
 }
 .item_card h2 {
   margin: 0 0 10px 0;
-  font-size: 26px;
+  font-size: 22px;
 }
 .item_card h3 {
   font-size: 28px;
   color: #b3b3b3;
-  margin: 10px 0 10px 0;
+  margin: 10px 0 30px 0;
 }
 .item_card h3 .currency {
   font-size: 22px;
@@ -455,7 +459,7 @@ html {
   background: #fff;
   border: 1px solid #c6c6c6;
   color: #6c6c6c;
-  font-size: 16px;
+  font-size: 12px;
 }
 .item_card .variations .btn-group .btn-primary:not(:disabled):not(.disabled):active,
 .item_card .variations .btn-group .btn-primary:not(:disabled):not(.disabled).active {
@@ -499,11 +503,9 @@ html {
 .item_card .by_it .col-md-3 .input-group-btn-vertical > .btn,
 .item_card .by_it .col-md-4 .input-group-btn-vertical > .btn,
 .item_card .by_it .col-md-5 .input-group-btn-vertical > .btn {
-  display: block;
+  display: flex;
   float: none;
-  width: 100%;
-  max-width: 100%;
-  padding: 12px 10px 12px 15px;
+  padding: 5px 3px 3px 3px;
   margin-left: -1px;
   position: relative;
   border-radius: 0;
@@ -630,10 +632,6 @@ html {
 .item_card .item_images .small_img {
   width: 65%;
 }
-.item_card .item_image {
-  border: 1px solid #333;
-  height: 100%;
-}
 .item_card .item_image .big_img {
   width: 100%;
   margin-top: 18px;
@@ -660,7 +658,7 @@ html {
 }
 .item_card .description_title h4 {
   margin: 25px 0 15px 0;
-  font-size: 26px;
+  font-size: 22px;
   text-transform: uppercase;
 }
 .item_card .description_text {
@@ -670,6 +668,7 @@ html {
 }
 .item_card .description_text p {
   font-size: 18px;
+  padding-right: 60px;
 }
 .item_card .description_text .size_table h5 {
   margin: 0 0 15px 15px;
@@ -1004,6 +1003,7 @@ html {
   border-radius: 0;
   font-size: 11px;
   text-transform: uppercase;
+  text-decoration: none;
   font-weight: bold;
   background: #df1e30;
   border: 1px solid #df1e30;
