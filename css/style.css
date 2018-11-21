@@ -146,7 +146,7 @@ html {
   width: 60%;
 }
 .menu-mobile:after {
-  content: "\f394";
+  content: "\f32a";
   font-family: "Ionicons";
   font-size: 2.5rem;
   padding: 0;
@@ -984,7 +984,7 @@ html {
   right: 0;
   padding: 10px;
   transition: ease-in-out 0.2s;
-  height: 100%;
+  height: auto;
   width: 100%;
 }
 .carousel h4,
@@ -1154,7 +1154,7 @@ html {
   height: 10px;
   margin: 4px;
   border-radius: 50%;
-  border-color: transparent;
+  border: 1px solid #df1e3047;
 }
 .carousel-indicators li {
   background: #fff;
@@ -1167,21 +1167,18 @@ html {
 }
 /* Banner */
 .banner {
+  background-color: #f1f1f1;
   color: #fff;
-  padding: 15px 0 15px 0;
+  padding: 5px 5px 5px 5px;
   margin: 50px 0 25px 0;
-  background: url(../images/banners/index-banner.png) no-repeat center top;
   width: auto;
   height: auto;
   background-size: cover;
 }
 .banner h2 {
+  padding-top: 150px;
   margin-bottom: 0;
   line-height: 35px;
-}
-.banner .slogan_under {
-  font-size: 21px;
-  font-style: italic;
 }
 .banner .btn {
   color: #fff;
@@ -1191,8 +1188,8 @@ html {
   text-transform: uppercase;
   font-weight: bold;
   padding: 7px 20px;
-  margin-top: 5px;
-  margin-bottom: 25px;
+  margin-top: 25px;
+  margin-bottom: 45px;
   line-height: 16px;
 }
 .banner .btn i {
@@ -1215,10 +1212,20 @@ html {
   width: 25px;
 }
 .banner .left_banner {
-  text-align: left;
+  background: url(../images/banners/1-compressor.jpg);
+  background-size: auto;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  background-position: unset;
+  background-repeat: no-repeat;
 }
 .banner .right_banner {
-  text-align: right;
+  background: url(../images/banners/2-compressor.jpg);
+  background-size: auto;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  background-position: top;
+  background-repeat: no-repeat;
 }
 .banner_mobile {
   display: none;
@@ -1256,6 +1263,9 @@ html {
   -webkit-transform: scale(1.2);
   -ms-transform: scale(1.2);
   transform: scale(1.2);
+}
+.brands .brands_images_mobile {
+  display: none;
 }
 /* Socials & Subscribe */
 .social {
@@ -1387,6 +1397,9 @@ html {
   .utp {
     font-size: 12px;
   }
+  .utp .return {
+    border-right: none;
+  }
   .social .searching form input {
     font-size: 10px;
   }
@@ -1492,6 +1505,12 @@ html {
   .media_content img {
     border-right: none;
     padding-right: 0;
+  }
+  .utp .delivery {
+    border-right: none;
+  }
+  .utp .return {
+    border-right: 1px solid #c6c6c6;
   }
   .carousel h4 {
     font-size: 14px;
@@ -1601,6 +1620,12 @@ html {
     font-size: 23px;
     margin: 5px 0;
   }
+  .utp .return {
+    border-right: none;
+  }
+  .item_card .description_text p {
+    padding-right: 0;
+  }
   .item_card .mobile_image_slider .carousel-inner .carousel-item {
     height: auto;
   }
@@ -1693,6 +1718,23 @@ html {
   .size_table {
     margin-top: 25px;
   }
+  .brands .brands_images {
+    display: none;
+  }
+  .brands .brands_images_mobile {
+    display: block;
+  }
+  .brands .brands_images_mobile .carousel-indicators {
+    bottom: 0;
+    top: 100%;
+  }
+  .brands .brands_images_mobile .carousel-item {
+    height: auto;
+  }
+  .brands .brands_images_mobile .carousel-item img {
+    height: auto;
+    width: auto;
+  }
 }
 @media only screen and (max-width: 575px) {
   .carousel .thumb-content,
@@ -1741,6 +1783,11 @@ html {
   .social .sociality form input,
   .social .searching form input {
     font-size: 10px;
+  }
+}
+@media only screen and (max-width: 491px) {
+  .utp .checked {
+    border-right: none;
   }
 }
 @media only screen and (max-width: 475px) {
