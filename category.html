@@ -860,6 +860,21 @@
     <script src="js/bootstrap.bundle.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <script src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/jquery.touchSwipe.js"></script>
+    <script>
+            $(document).ready(function() {  
+                //Enable swiping...
+                $(".carousel-inner").swipe( {
+                    //Generic swipe handler for all directions
+                    swipeLeft:function(event, direction, distance, duration, fingerCount) {
+                        $(this).parent().carousel('next'); 
+                    },
+                    swipeRight: function() {
+                        $(this).parent().carousel('prev'); 
+                    }
+                });
+            });
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
     <script src="js/megamenu.js"></script>
     <script src="https://unpkg.com/ionicons@4.4.6/dist/ionicons.js"></script>

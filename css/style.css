@@ -166,6 +166,9 @@ html {
 .megamenu {
   padding: 15px 0 0 0;
 }
+.megamenu .mobile_cart {
+  display: none;
+}
 .megamenu .container {
   max-width: 1280px;
 }
@@ -1456,14 +1459,19 @@ html {
     width: 40%;
   }
 }
-@media only screen and (max-width: 1110px) {
-  .megamenu .menu_tab {
-    font-size: 19px;
-  }
-}
 @media only screen and (max-width: 1024px) {
   .megamenu {
     padding: 0;
+  }
+  .megamenu .mobile_cart {
+    display: block;
+    margin-top: 10px;
+    border-top: 1px solid #dcdcdc;
+  }
+  .megamenu .mobile_cart img {
+    width: 15px;
+    margin-right: 10px;
+    margin-bottom: 4px;
   }
   .mobile_logotype {
     width: 50%;
