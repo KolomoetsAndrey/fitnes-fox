@@ -428,6 +428,10 @@ body, html {
             padding: 0 35px 0 35px;
         }
     }
+
+    .utp_items_mobile {
+        display: none;
+    }
 }
 
 /* Slider */
@@ -2118,6 +2122,23 @@ body, html {
     .utp {
         .checked {
             border-right: none;
+        }
+
+        .utp_items {
+            display: none;
+        }
+
+        .utp_items_mobile {
+            display: contents;
+
+            .carousel-item {
+                height: auto;
+
+                .utp_text {
+                    width: 310px;
+                    text-align: center;
+                }
+            }
         }
     }
 }

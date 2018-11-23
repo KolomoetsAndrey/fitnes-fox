@@ -355,6 +355,9 @@ html {
   line-height: 20px;
   padding: 0 35px 0 35px;
 }
+.utp .utp_items_mobile {
+  display: none;
+}
 /* Slider */
 .carousel-item {
   height: 670px;
@@ -1832,6 +1835,19 @@ html {
 @media only screen and (max-width: 491px) {
   .utp .checked {
     border-right: none;
+  }
+  .utp .utp_items {
+    display: none;
+  }
+  .utp .utp_items_mobile {
+    display: contents;
+  }
+  .utp .utp_items_mobile .carousel-item {
+    height: auto;
+  }
+  .utp .utp_items_mobile .carousel-item .utp_text {
+    width: 310px;
+    text-align: center;
   }
 }
 @media only screen and (max-width: 475px) {
