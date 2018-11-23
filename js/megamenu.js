@@ -8,7 +8,7 @@ $(document).ready(function () {
 
 
     $('.menu > ul > li > ul:not(:has(ul))').addClass('normal-sub');
-    //Checks if drodown menu's li elements have anothere level (ul), if not the dropdown is shown as regular dropdown, not a mega menu
+    //Checks if dropdown menu's li elements have anothere level (ul), if not the dropdown is shown as regular dropdown, not a mega menu
 
     $(".menu > ul").before("<a class=\"menu-mobile\" href=\"#\"><img class=\"navbar_logo\" src=\"images/logo-mobile.png\" alt=\"FitClothing\"></a>");
         
@@ -19,12 +19,12 @@ $(document).ready(function () {
 
     $(".menu > ul > li").hover(
         function (e) {
-            if ($(window).width() > 943) {
+            if ($(window).width() > 1025) {
                 $(this).children("ul").fadeIn(150);
                 e.preventDefault();
             }
         }, function (e) {
-            if ($(window).width() > 943) {
+            if ($(window).width() > 1025) {
                 $(this).children("ul").fadeOut(150);
                 e.preventDefault();
             }
@@ -45,7 +45,7 @@ $(document).ready(function () {
         var thisMenu = $(this).children("ul");
         var prevState = thisMenu.css('display');
         $(".menu > ul > li > ul").fadeOut();
-        if ($(window).width() < 943) {
+        if ($(window).width() < 1025) {
             if(prevState !== 'block')
                 thisMenu.fadeIn(150);
         }

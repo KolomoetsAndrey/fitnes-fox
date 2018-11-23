@@ -105,8 +105,39 @@ html {
 .header .btn {
   display: inline;
 }
-.header .dropdown-menu {
-  padding: 15px;
+.header .dropdown .modal .modal-body .row {
+  padding-bottom: 15px;
+}
+.header .dropdown .modal .modal-body .modal_title {
+  text-transform: uppercase;
+  font-size: 25px;
+  margin-top: 0;
+}
+.header .dropdown .modal .modal-body .item_title {
+  font-size: 15px;
+  font-weight: 600;
+  margin: 0;
+}
+.header .dropdown .modal .modal-body p {
+  color: #444;
+}
+.header .dropdown .modal .modal-body .modal_price {
+  color: #df1e30;
+  font-size: 20px;
+  margin: 0;
+  margin-top: -4px;
+}
+.header .dropdown .modal .modal-body .item_sum {
+  font-size: 25px;
+  text-transform: uppercase;
+  color: #000;
+  margin: 0;
+}
+.header .dropdown .modal .modal-body .item_sum span {
+  font-size: 15px;
+}
+.header .dropdown .modal img {
+  width: 80%;
 }
 .header .cart {
   width: 30px;
@@ -176,10 +207,12 @@ html {
   background: transparent;
   padding: 0;
   margin: 0;
+  transition: all 0.1s ease-in-out;
 }
 .menu > ul > li:hover {
-  box-shadow: 0 7px 0px -4px #df1e30;
-  transition: all 0.1s ease-in-out;
+  border-bottom: 2px solid #df1e30;
+  transition: all 0.05s ease-in-out;
+  margin-top: -2px;
 }
 .menu > ul > li a {
   padding: 5px 20px 5px 20px;
@@ -200,9 +233,9 @@ html {
   z-index: 99;
   left: 0;
   margin: 0;
+  margin-top: 2px;
   list-style: none;
   box-sizing: border-box;
-  top: 153px;
   border-top: 1px solid #6c6c6c;
   border-bottom: 1px solid #6c6c6c;
 }
@@ -218,7 +251,7 @@ html {
   margin: 0;
   padding-bottom: 0;
   list-style: none;
-  width: 30%;
+  width: 20%;
   background: none;
   float: left;
 }
@@ -226,7 +259,7 @@ html {
   color: #000;
   font-size: 15px;
   font-weight: 700;
-  padding: 0 50px;
+  padding: 0 25px;
   width: 100%;
   display: block;
 }
@@ -255,6 +288,15 @@ html {
 .menu > ul > li > ul > li > ul > li :hover {
   color: #df1e30;
   transition: all 0.1s ease-in-out;
+}
+.menu > ul > li > ul > li > ul > li p {
+  margin: 0 20px 10px 25px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #00000026;
+  color: #df1e30;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 .menu > ul > li > ul > li > ul > li a {
   border: 0;
@@ -1388,9 +1430,6 @@ html {
   .carousel .thumb-content {
     padding: 10px 5px 15px 5px;
   }
-  .megamenu .menu > ul > li a {
-    padding: 5px 5px 5px 5px;
-  }
   .header .slogan {
     font-size: 11px;
   }
@@ -1408,9 +1447,6 @@ html {
   }
 }
 @media only screen and (max-width: 1110px) {
-  .megamenu .menu > ul > li a {
-    padding: 5px 3px 5px 3px;
-  }
   .megamenu .menu_tab {
     font-size: 19px;
   }
@@ -1418,6 +1454,9 @@ html {
 @media only screen and (max-width: 1024px) {
   .megamenu {
     padding: 0;
+  }
+  .mobile_logotype {
+    width: 50%;
   }
   .utp {
     margin-top: 5px;
@@ -1455,10 +1494,10 @@ html {
     display: block;
   }
   .menu > ul > li:hover {
-    box-shadow: -2px 7px 0px -4px #df1e30;
+    border-bottom: none;
+    margin-top: 0;
   }
   .menu > ul > li a {
-    padding: 1.5em;
     width: 100%;
     display: block;
   }
@@ -1466,10 +1505,13 @@ html {
     position: relative;
     top: 0;
     background: #fff;
+    padding: 0 0 20px 0px;
   }
   .menu .first_column,
   .menu .second_column,
-  .menu .third_column {
+  .menu .third_column,
+  .menu .fourth_column,
+  .menu .fifth_column {
     margin: 0;
   }
   .menu > ul > li > ul.normal-sub {
@@ -1490,9 +1532,12 @@ html {
   .menu > ul > li > ul > li > ul > li {
     float: none;
   }
+  .menu > ul > li > ul > li > ul > li p {
+    margin: 20px 0 15px 20px;
+  }
   .menu .show-on-mobile {
     display: block;
-    padding: 20px;
+    padding: 0;
   }
   .carousel-caption {
     top: 10%;
