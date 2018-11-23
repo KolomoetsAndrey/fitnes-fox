@@ -22,6 +22,12 @@ html {
 .bold {
   font-weight: 800;
 }
+.carousel-control {
+  display: none;
+}
+.prod_slider_content:hover .carousel-control {
+  display: block;
+}
 .top-line {
   background-color: #000;
   color: #fff;
@@ -1175,18 +1181,20 @@ html {
 .new_items_mobile .carousel-control.left i,
 .hits_items_mobile .carousel-control.left i {
   margin-left: -15px;
+  transition: ease-in-out 0.2s;
 }
-.carousel .carousel-control.left i,
-.wrapper .carousel-control.left i,
-.new_items_mobile .carousel-control.left i,
-.hits_items_mobile .carousel-control.left i {
+.carousel .carousel-control.right i,
+.wrapper .carousel-control.right i,
+.new_items_mobile .carousel-control.right i,
+.hits_items_mobile .carousel-control.right i {
   margin-right: -3px;
+  transition: ease-in-out 0.2s;
 }
 .carousel .carousel-indicators,
 .wrapper .carousel-indicators,
 .new_items_mobile .carousel-indicators,
 .hits_items_mobile .carousel-indicators {
-  bottom: 25px;
+  bottom: 20px;
 }
 .new_items_mobile,
 .hits_items_mobile {
@@ -1194,8 +1202,8 @@ html {
 }
 .carousel-indicators li,
 .carousel-indicators li.active {
-  width: 10px;
-  height: 10px;
+  width: 15px;
+  height: 15px;
   margin: 4px;
   border-radius: 50%;
   border: 1px solid #df1e3047;
@@ -1548,6 +1556,21 @@ html {
     font-size: 22px;
   }
 }
+@media only screen and (max-width: 997px) {
+  .utp .utp_items {
+    display: none;
+  }
+  .utp .utp_items_mobile {
+    display: block;
+  }
+  .utp .utp_items_mobile .carousel-item {
+    height: auto;
+  }
+  .utp .utp_items_mobile .carousel-item .utp_text {
+    width: 310px;
+    text-align: center;
+  }
+}
 @media only screen and (max-width: 991px) {
   .media_content img {
     border-right: none;
@@ -1773,7 +1796,7 @@ html {
   }
   .brands .brands_images_mobile .carousel-indicators {
     bottom: 0;
-    top: 100%;
+    top: 110%;
   }
   .brands .brands_images_mobile .carousel-item {
     height: auto;
@@ -1835,19 +1858,6 @@ html {
 @media only screen and (max-width: 491px) {
   .utp .checked {
     border-right: none;
-  }
-  .utp .utp_items {
-    display: none;
-  }
-  .utp .utp_items_mobile {
-    display: contents;
-  }
-  .utp .utp_items_mobile .carousel-item {
-    height: auto;
-  }
-  .utp .utp_items_mobile .carousel-item .utp_text {
-    width: 310px;
-    text-align: center;
   }
 }
 @media only screen and (max-width: 475px) {

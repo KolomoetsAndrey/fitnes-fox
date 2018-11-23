@@ -27,6 +27,14 @@ body, html {
     font-weight: 800;
 }
 
+.carousel-control {
+    display: none;
+}
+
+.prod_slider_content:hover .carousel-control {
+    display: block;
+}
+
 .top-line {
     background-color: #000;
     color: #fff;
@@ -127,11 +135,6 @@ body, html {
     
     .btn {
         display: inline;
-    }
-
-    .dropdown-menu  {
-//        padding: 15px;
-        
     }
 
     .dropdown {
@@ -1238,14 +1241,17 @@ body, html {
 
     .carousel-control.left i {
         margin-left: -15px;
+        transition: ease-in-out .2s;
     }
 
-    .carousel-control.left i {
+    .carousel-control.right i {
         margin-right: -3px;
+        transition: ease-in-out .2s;
     }
+
 
     .carousel-indicators {
-        bottom: 25px;
+        bottom: 20px;
     }
 }
 
@@ -1254,8 +1260,8 @@ body, html {
 }
 
 .carousel-indicators li, .carousel-indicators li.active {
-    width: 10px;
-    height: 10px;
+    width: 15px;
+    height: 15px;
     margin: 4px;
     border-radius: 50%;
     border: 1px solid #df1e3047;
@@ -1704,6 +1710,27 @@ body, html {
     }
 }
 
+@media only screen and (max-width: 997px) {
+    .utp {
+        .utp_items {
+            display: none;
+        }
+    
+        .utp_items_mobile {
+            display: block;
+    
+            .carousel-item {
+                height: auto;
+    
+                .utp_text {
+                    width: 310px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
 @media only screen and (max-width: 991px) {
     .media_content {
         img {
@@ -2019,7 +2046,7 @@ body, html {
 
             .carousel-indicators {
                 bottom: 0;
-                top: 100%;
+                top: 110%;
             }
 
             .carousel-item {
@@ -2122,23 +2149,6 @@ body, html {
     .utp {
         .checked {
             border-right: none;
-        }
-
-        .utp_items {
-            display: none;
-        }
-
-        .utp_items_mobile {
-            display: contents;
-
-            .carousel-item {
-                height: auto;
-
-                .utp_text {
-                    width: 310px;
-                    text-align: center;
-                }
-            }
         }
     }
 }
