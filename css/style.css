@@ -1460,19 +1460,6 @@ html {
   }
 }
 @media only screen and (max-width: 1024px) {
-  .megamenu {
-    padding: 0;
-  }
-  .megamenu .mobile_cart {
-    display: block;
-    margin-top: 10px;
-    border-top: 1px solid #dcdcdc;
-  }
-  .megamenu .mobile_cart img {
-    width: 15px;
-    margin-right: 10px;
-    margin-bottom: 4px;
-  }
   .mobile_logotype {
     width: 50%;
   }
@@ -1556,6 +1543,21 @@ html {
   .menu .show-on-mobile {
     display: block;
     padding: 0;
+  }
+  .megamenu {
+    padding: 0;
+  }
+  .megamenu .last {
+    margin-bottom: 10px;
+  }
+  .megamenu .mobile_cart {
+    display: block;
+    border-top: 1px solid #dcdcdc;
+  }
+  .megamenu .mobile_cart img {
+    width: 15px;
+    margin-right: 10px;
+    margin-bottom: 4px;
   }
   .carousel-caption {
     top: 10%;
