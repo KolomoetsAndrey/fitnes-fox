@@ -2267,10 +2267,9 @@ textarea.form-control {
   -ms-user-select: none;
   user-select: none;
   border: 1px solid transparent;
-  padding: 5px 9px;
+  padding: 10px 15px;
   font-size: 1rem;
   line-height: 1.5;
-  border-radius: 0.25rem;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
@@ -5446,7 +5445,7 @@ button.close {
 }
 
 .modal-footer > :not(:first-child) {
-  margin-left: .25rem;
+  margin-left: 5%;
 }
 
 .modal-footer > :not(:last-child) {
