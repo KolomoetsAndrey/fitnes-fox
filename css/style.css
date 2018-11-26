@@ -180,6 +180,7 @@ h1 {
 .megamenu .fifth_column img,
 .megamenu .fourth_column img,
 .megamenu .sixth_column img {
+  width: 200%;
   max-width: 290px;
 }
 .megamenu .menu .menu_brands .brands .menu_brand_logo {
