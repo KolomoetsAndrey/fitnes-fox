@@ -52,23 +52,60 @@
         </div>
     </section>
 
+    <!-- Submenu Mobile -->
+    <section class="submenu">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 phones my-auto">
+                    <ul>
+                        <li>(073) 069-6097</li>
+                        <li>(068) 225-7235</li>
+                    </ul>
+                </div>
+                <div class="col-2 heart my-auto">
+                    <a href="#">
+                        <img src="images/cart/heart.png" alt="">
+                    </a>
+                </div>
+                <div class="col-2 carte my-auto">
+                    <a href="#">
+                        <img src="images/cart/cart.png" alt="">
+                    </a>
+                </div>
+                <div class="col-2 search my-auto">
+                    <a data-toggle="collapse" href="#collapseSubmenu" role="button" aria-expanded="false" aria-controls="collapseSubmenu">
+                        <img src="images/cart/search.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="collapse searchcollapse" id="collapseSubmenu">
+        <div class="card card-body">
+            <form class="form-inline d-flex justify-content-center">
+                <input class="form-control" type="search" placeholder="Введите поисковое слово" aria-label="Search">
+                <button class="btn" type="submit">Поиск</button>
+            </form>
+        </div>
+    </div>
+
     <!-- Logo, Search, Cart -->
     <header class="header" id="header">
         <div class="container">
             <div class="row">
-                <div class="col-lg-3 logo">
+                <div class="col-sm-3 logo">
                     <a class="navbar-brand logotype" href="index.html">
                         <img class="navbar_logo" src="images/logo.png" alt="FitClothing">
                     </a>
                     <p class="slogan">брендовая спортивная одежда</p>
                 </div>
-                <div class="col-lg-7 searching">
+                <div class="col-sm-7 searching">
                     <form class="form-inline ">
                         <input class="form-control form-control-sm mr-3" type="text" placeholder="Введите поисковое слово в этом поле..." aria-label="Search">
                         <i class="fas fa-search" aria-hidden="true"></i>
                     </form>
                 </div>
-                <div class="col-lg-1">
+                <div class="col-sm-1">
                     <a href="#">
                     <img class="heart" src="images/cart/heart_white.png" alt="Heart">
                     </a>
@@ -401,9 +438,10 @@
                                     </li>
                                 </ul>
                             </li>
+                            <!--
                             <li class="menu_link mobile_cart">
                                 <a href="cart.html" class="menu_tab"><img class="cart" src="images/cart/cart_white.png" alt="">Ваша корзина</a>
-                            </li>
+                            </li>-->
                         </ul>
                     </div>
                  </div>
@@ -441,7 +479,7 @@
                         <li><a href="#"><img class="small_img" src="images/items/t-shirt.png" alt=""></a></li>
                     </ul>
                 </div>
-                <div class="col-md-5 item_image">
+                <div class="col-md-6 item_image">
                     <img class="big_img" src="images/items/t-shirt-big.png" alt="">
                 </div>
                 <div class="col-12 mobile_image_slider">
@@ -464,14 +502,21 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-5">
+                <div class="col-md-4 item_card_description">
                     <img class="item_logo" src="images/brands/nike.png" alt="">
                     <h2>Рубашка поло Nike Grey XXL</h2>
                     <p>Код товара:<span class="code">524873</span></p>
                     <h3><strike>256 <span class="currency">грн</span></strike> <span class="red_price">198 <span class="currency">грн</span></span></h3>
                     <div class="row">
-                        <div class="col-md-8 variations">
+                        <div class="col-sm-6 variants">
                             <p>Выбрать размер</p>
+                        </div>
+                        <div class="col-sm-6 tablecell righted">
+                            <a href="#size_table">Таблица размеров</a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 variations">
                             <form class="form-horizontal " method="post" action="">
                                 <div class="form-group">
                                     <div class="btn-group btn-group-justified" data-toggle="buttons">
@@ -505,7 +550,7 @@
                         </div>
                     </div>
                     <div class="row by_it">
-                        <div class="col-md-3">
+                        <div class="col-sm-4">
                             <div class="input-group spinner">
                                     <input type="text" class="form-control" value="1" min="1" max="100">
                                     <div class="input-group-btn-vertical">
@@ -514,14 +559,14 @@
                                     </div>
                             </div>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-sm-8">
                             <div class="add_to_cart">
-                                <a href="#" class="btn"><i class="fas fa-shopping-cart"></i>КУПИТЬ</a>
+                                <a href="#"><i class="fas fa-shopping-cart"></i>КУПИТЬ</a>
                             </div>
                         </div>
-                        <div class="col-md-5">
+                        <div class="col-sm-12">
                             <div class="one_click">
-                                <a href="#" class="btn">Купить в один клик</a>
+                                <a href="#">Купить в один клик</a>
                             </div>
                         </div>
                     </div>
@@ -540,7 +585,7 @@
                 </div>
             </div>
             <div class="row description_text">
-                <div class="col-md-6">
+                <div class="col-md-7">
                     <p>
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, 
                             officiis rem, iure minus ipsum neque porro odio magni soluta quae 
@@ -555,15 +600,14 @@
                             consectetur adipisicing elit. Corporis, officiis.
                     </p>
                 </div>
-                <div class="col-md-6 size_table" id="size_table">
+                <div class="col-md-5 size_table" id="size_table">
                     <h5>Таблица размеров</h5>
                     <table class="table size_table_title">
                             <thead class="thead-light">
                               <tr class="table_head">
-                                <th scope="col">Международный размер</th>
-                                <th scope="col">Обхват груди (см)</th>
-                                <th scope="col">Обхват талии (см)</th>
-                                <th scope="col">Обхват шеи (см)</th>
+                                <th scope="col">Размер</th>
+                                <th scope="col">Грудь</th>
+                                <th scope="col">Талия</th>
                               </tr>
                             </thead>
                             <tbody>
@@ -571,31 +615,26 @@
                                     <th scope="row">S</th>
                                     <td>90-94</td>
                                     <td>78-82</td>
-                                    <td>39-40</td>
                                 </tr>
                                 <tr>
                                     <th scope="row">M</th>
                                     <td>94-98</td>
                                     <td>82-86</td>
-                                    <td>40-40</td>
                                 </tr>
                                 <tr>
                                     <th scope="row">L</th>
                                     <td>98-102</td>
                                     <td>86-90</td>
-                                    <td>41-42</td>
                                 </tr>
                                 <tr>
                                     <th scope="row">XL</th>
                                     <td>102-106</td>
                                     <td>92-96</td>
-                                    <td>43-44</td>
                                 </tr>
                                 <tr>
                                     <th scope="row">XXL</th>
                                     <td>106-110</td>
                                     <td>96-100</td>
-                                    <td>44-45</td>
                                 </tr>
                             </tbody>
                     </table>

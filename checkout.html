@@ -52,23 +52,60 @@
         </div>
     </section>
 
+    <!-- Submenu Mobile -->
+    <section class="submenu">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 phones my-auto">
+                    <ul>
+                        <li>(073) 069-6097</li>
+                        <li>(068) 225-7235</li>
+                    </ul>
+                </div>
+                <div class="col-2 heart my-auto">
+                    <a href="#">
+                        <img src="images/cart/heart.png" alt="">
+                    </a>
+                </div>
+                <div class="col-2 carte my-auto">
+                    <a href="#">
+                        <img src="images/cart/cart.png" alt="">
+                    </a>
+                </div>
+                <div class="col-2 search my-auto">
+                    <a data-toggle="collapse" href="#collapseSubmenu" role="button" aria-expanded="false" aria-controls="collapseSubmenu">
+                        <img src="images/cart/search.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="collapse searchcollapse" id="collapseSubmenu">
+        <div class="card card-body">
+            <form class="form-inline d-flex justify-content-center">
+                <input class="form-control" type="search" placeholder="Введите поисковое слово" aria-label="Search">
+                <button class="btn" type="submit">Поиск</button>
+            </form>
+        </div>
+    </div>
+
     <!-- Logo, Search, Cart -->
     <header class="header" id="header">
         <div class="container">
             <div class="row">
-                <div class="col-lg-3 logo">
+                <div class="col-sm-3 logo">
                     <a class="navbar-brand logotype" href="index.html">
                         <img class="navbar_logo" src="images/logo.png" alt="FitClothing">
                     </a>
                     <p class="slogan">брендовая спортивная одежда</p>
                 </div>
-                <div class="col-lg-7 searching">
+                <div class="col-sm-7 searching">
                     <form class="form-inline ">
                         <input class="form-control form-control-sm mr-3" type="text" placeholder="Введите поисковое слово в этом поле..." aria-label="Search">
                         <i class="fas fa-search" aria-hidden="true"></i>
                     </form>
                 </div>
-                <div class="col-lg-1">
+                <div class="col-sm-1">
                     <a href="#">
                     <img class="heart" src="images/cart/heart_white.png" alt="Heart">
                     </a>
@@ -401,9 +438,10 @@
                                     </li>
                                 </ul>
                             </li>
+                            <!--
                             <li class="menu_link mobile_cart">
                                 <a href="cart.html" class="menu_tab"><img class="cart" src="images/cart/cart_white.png" alt="">Ваша корзина</a>
-                            </li>
+                            </li>-->
                         </ul>
                     </div>
                  </div>
