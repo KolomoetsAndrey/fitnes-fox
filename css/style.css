@@ -1990,6 +1990,9 @@ h1 {
   .item_card .size_table_link {
     display: block;
   }
+  .item_card .by_it .col-sm-12 .one_click {
+    margin-top: 25px;
+  }
   .slider .carousel-inner .carousel-item {
     height: 300px;
   }
