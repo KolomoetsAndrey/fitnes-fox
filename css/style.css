@@ -1704,6 +1704,7 @@ h1 {
   }
   .submenu .phones ul {
     list-style: none;
+    padding-left: 15px;
   }
   .submenu .heart img {
     width: 100%;
