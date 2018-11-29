@@ -691,106 +691,99 @@ h1 {
 
     .by_it {
 
+        margin-bottom: 25px;
+
         .input-group {
             width: 50%;
         }
 
-        .col-sm-2, .col-sm-3, .col-sm-4, 
-        .col-sm-5, .col-sm-6, .col-sm-7, 
-        .col-sm-8, .col-sm-12 {
-            padding: 0;
-            margin: 0 0 5px 0;
+        .by_it_form, .add_to_cart, .one_click {
+            padding-left: 0;
+        }
 
-            /* Plus-Minus */
-            .spinner input {
-                text-align: right;
-              }
-              
-              .input-group-btn-vertical {
-                position: relative;
-                white-space: nowrap;
-                width: 2%;
-                vertical-align: middle;
-                display: table-cell;
-              }
-              
-              .input-group-btn-vertical > .btn {
-                display: flex;
-                float: none;
-                padding: 5px 3px 3px 3px;
-                margin-left: -1px;
-                position: relative;
-                border-radius: 0;
-              }
-              
-              .input-group-btn-vertical > .btn:first-child {
-                border-top-right-radius: 0;
-              }
-              
-              .input-group-btn-vertical > .btn:last-child {
-                margin-top: -2px;
-                border-bottom-right-radius: 0;
-              }
-              
-              .input-group-btn-vertical i {
-                position: absolute;
-                top: 0;
-                left: 4px;
-                padding: 5px 5px 5px 2px;
-              }
-            /* Plus-Minus End */
+        .add_to_cart {
+            a {
+                border: 1px solid #df1e30;
+                width: 100%;
+                color: #fff;
+                padding: 15px 25px;
+                text-align: center;
+                background: #df1e30;
+                transition: ease-in-out .2s;
 
-            .form-control {
-                width: 73%;
-                border-radius: 0;
-                height: 50px;
-            }
-
-            .add_to_cart {
-                margin-top: 13px;
-
-                a {
-                    border: 1px solid #df1e30;
-                    width: 100%;
-                    color: #fff;
-                    padding: 15px 25px;
-                    text-align: center;
-                    background: #df1e30;
-                    transition: ease-in-out .2s;
-
-                    i {
-                        margin-right: 5px;
-                    }
+                i {
+                    margin-right: 5px;
                 }
             }
 
-            .add_to_cart:hover {
-                a {
-                    background: #fff;
-                    color: #df1e30;
-                    border: 1px solid #df1e30;
-                }
+            a:hover {
+                background: #fff;
+                color: #df1e30;
+                border: 1px solid #df1e30;
+            }
+        }
+
+        .one_click {
+            margin-top: 15px;
+
+            a {
+                border: 1px solid #000;
+                width: 100%;
+                padding: 15px 30px;
+                text-align: center;
+                transition: ease-in-out .2s;
             }
 
-            .one_click {
-                margin-top: 15px;
-
-                a {
-                    border: 1px solid #000;
-                    width: 100%;
-                    padding: 15px 30px;
-                    text-align: center;
-                    transition: ease-in-out .2s;
-                }
-            }
-
-            .one_click:hover {
-                a {
-                    border: 1px solid #df1e30;
+            a:hover {
+                border: 1px solid #df1e30;
                 background: #df1e30;
                 color: #fff;
-                }
             }
+        }
+
+        /* Plus-Minus */
+        .spinner input {
+            text-align: right;
+          }
+          
+          .input-group-btn-vertical {
+            position: relative;
+            white-space: nowrap;
+            width: 2%;
+            vertical-align: middle;
+            display: table-cell;
+          }
+          
+          .input-group-btn-vertical > .btn {
+            display: flex;
+            float: none;
+            padding: 5px 3px 3px 3px;
+            margin-left: -1px;
+            position: relative;
+            border-radius: 0;
+          }
+          
+          .input-group-btn-vertical > .btn:first-child {
+            border-top-right-radius: 0;
+          }
+          
+          .input-group-btn-vertical > .btn:last-child {
+            margin-top: -2px;
+            border-bottom-right-radius: 0;
+          }
+          
+          .input-group-btn-vertical i {
+            position: absolute;
+            top: 0;
+            left: 4px;
+            padding: 5px 5px 5px 2px;
+          }
+        /* Plus-Minus End */
+
+        .form-control {
+            width: 73%;
+            border-radius: 0;
+            height: 50px;
         }
     }
 
@@ -801,7 +794,7 @@ h1 {
             text-decoration: none;
         }
 
-        .col-lg-12 {
+        .col-md-12 {
             padding-left: 0;
         }
     }
