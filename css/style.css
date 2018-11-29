@@ -454,7 +454,7 @@ h1 {
 }
 /* Breadcrumb */
 .breadcrumbs {
-  margin: 25px 0 0 0;
+  margin: 0;
   border-top: 1px solid #6c6c6c;
   background: linear-gradient(#d7d7d7, #ffffff);
   height: 50px;
