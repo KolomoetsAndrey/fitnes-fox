@@ -189,7 +189,7 @@ h1 {
 }
 .megamenu .menu .menu_brands .brands .menu_brand_logo {
   max-width: 100%;
-  padding-right: 35%;
+  padding-right: 10%;
   padding-top: 15px;
 }
 .megamenu .menu .menu-mobile {
@@ -297,7 +297,7 @@ h1 {
   margin: 0;
   padding-bottom: 0;
   list-style: none;
-  width: 15%;
+  width: 12%;
   background: none;
   float: left;
 }
@@ -308,6 +308,9 @@ h1 {
   padding: 0 25px;
   width: 100%;
   display: block;
+}
+.menu .first_column {
+  margin-left: 10%;
 }
 .menu > ul > li > ul > li > ul {
   display: block;
