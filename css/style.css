@@ -133,6 +133,8 @@ h1 {
 }
 .header .dropdown .modal .modal-body p {
   color: #444;
+  line-height: 20px;
+  font-size: 12px;
 }
 .header .dropdown .modal .modal-body .modal_price {
   color: #df1e30;
@@ -1774,6 +1776,8 @@ h1 {
   .selected .cart_description_mobile {
     display: flex;
     margin-bottom: 10px;
+    border-bottom: 1px solid #dedede;
+    padding: 10px 0;
   }
   .cart .cart_description_mobile .hrt,
   .selected .cart_description_mobile .hrt,
