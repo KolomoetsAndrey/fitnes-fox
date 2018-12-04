@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="css/normalize.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/ionicons.min.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.css">
     
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
@@ -473,10 +474,9 @@
             <div class="row">
                 <div class="col-md-2 item_images">
                     <ul>
-                        <li><a href="#"><img class="small_img" src="images/items/t-shirt.png" alt=""></a></li>
-                        <li><a href="#"><img class="small_img" src="images/items/t-shirt.png" alt=""></a></li>
-                        <li><a href="#"><img class="small_img" src="images/items/t-shirt.png" alt=""></a></li>
-                        <li><a href="#"><img class="small_img" src="images/items/t-shirt.png" alt=""></a></li>
+                        <li><a data-fancybox="gallery" href="images/items/t-shirt-big.png"><img class="small_img" src="images/items/t-shirt.png" alt=""></a></li>
+                        <li><a data-fancybox="gallery" href="images/items/t-shirt-big.png"><img class="small_img" src="images/items/t-shirt.png" alt=""></a></li>
+                        <li><a data-fancybox="gallery" href="images/items/t-shirt-big.png"><img class="small_img" src="images/items/t-shirt.png" alt=""></a></li>
                     </ul>
                 </div>
                 <div class="col-md-6 item_image">
@@ -509,9 +509,9 @@
                     <h3><strike>256 <span class="currency">грн</span></strike> <span class="red_price">198 <span class="currency">грн</span></span></h3>
                     <div class="row">
                         <div class="col-sm-6 variants">
-                            <p>Выбрать размер</p>
+                            <!--<p>Выбрать размер</p>-->
                         </div>
-                        <div class="col-sm-6 tablecell righted">
+                        <div class="col-sm-6 tablecell">
                             <a href="#size_table">Таблица размеров</a>
                         </div>
                     </div>
@@ -554,8 +554,8 @@
                             <div class="input-group spinner">
                                     <input type="text" class="form-control" value="1" min="1" max="100">
                                     <div class="input-group-btn-vertical">
-                                      <button class="btn btn-default" type="button"><ion-icon name="add"></ion-icon></button>
-                                      <button class="btn btn-default" type="button"><ion-icon name="remove"></ion-icon></button>
+                                      <button class="btn btn-default" type="button">+</button>
+                                      <button class="btn btn-default" type="button">-</button>
                                     </div>
                             </div>
                         </div>
@@ -1031,6 +1031,7 @@
     <script src="js/vendor/jquery.min.js"></script>
     <script src="js/bootstrap.bundle.js"></script>
     <script src="js/bootstrap.js"></script>
+    <script src="js/jquery.fancybox.js"></script>
     <script type="text/javascript" src="js/jquery.touchSwipe.js"></script>
     <script>
             $(document).ready(function() {  
