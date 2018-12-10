@@ -609,6 +609,92 @@ h1 {
 
     .category_items {
         margin: 50px 0 50px 0;
+
+        .thumb-wrapper {
+            .quick_view {
+                width: 83%;
+                text-align: center;
+                padding: 0;
+                margin: 0;
+                opacity: 0;
+//                transform: translateY(-50%) translateX(-50%);
+                position: absolute;
+                top: 60%;
+                z-index: 1000;
+                transition: all .3s ease 0s;
+
+                a {
+                    color: #df1e30;
+                    border: 1px solid #df1e30;
+                    padding: 5px;
+                    border-radius: 5px;
+                }
+            }
+        }
+
+        .thumb-wrapper:hover .quick_view {
+            opacity: 1;
+            top: 30%;
+        }
+
+        .modal-content {
+            padding: 10px 25px 25px 25px;
+            
+            .modal-header {
+                padding: 10px 0;
+            }
+
+            .modal-body {
+                .more_details {
+                    margin-top: 15px;
+
+                    a {
+                        text-decoration: underline;
+                    }
+
+                    a:hover {
+                        color: #df1e30;
+                    }
+                }
+            }
+            
+            .variations {
+
+                h5 {
+                    font-size: 15px;
+                    font-weight: 600;
+                    margin: 10px 0;
+                }
+
+                .btn-group {
+                    padding-top: 5px;
+                    display: block;
+
+                    .btn {
+                        margin-right: 3px;
+                        border-radius: 0;
+                        background: #fff;
+                        border: 1px solid #c6c6c6;
+                        color: #6c6c6c;
+                        font-size: 15px;
+                        font-weight: 100;
+                        padding: 5px 10px;
+                        width: 45px;
+                    }
+
+                    .btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active {
+                        background-color: #fff;
+                        color: #000;
+                        font-weight: 100;
+                        border: 1px solid #000;
+                    }
+
+                    input {
+                        display: none;
+                    }
+                }
+            }
+        }
     }
 
     .paginations {
@@ -1235,7 +1321,7 @@ h1 {
         i {
             font-size: 14px;
             font-weight: bold;
-            margin-left: 5px;
+            margin-right: 5px;
         }
     }
 
@@ -2187,8 +2273,11 @@ h1 {
 
     .wrapper {
         .titles_top {
-            top: 50px;
-            height: 50px;
+            height: 100%;
+
+            .sort {
+                padding: 15px 0;
+            }
 
             .col-7, .col-5 {
                 padding: 0 5px 0 5px;
