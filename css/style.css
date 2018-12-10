@@ -868,7 +868,7 @@ h1 {
   margin: 0;
   padding-left: 10px;
   text-transform: uppercase;
-  font-size: 26px;
+  font-size: 21px;
   margin-bottom: 25px;
   border-bottom: 1px solid #6c6c6c;
 }
@@ -900,7 +900,7 @@ h1 {
 .selected .lets_checkout p {
   margin-top: 10px;
   margin-bottom: 25px;
-  font-size: 21px;
+  font-size: 18px;
 }
 .cart .lets_checkout p .items_sum_numb,
 .selected .lets_checkout p .items_sum_numb {
