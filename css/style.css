@@ -949,6 +949,30 @@ h1 {
   font-size: 16px;
   margin-bottom: 15px;
 }
+.checkout_form .checkout_login .next_button,
+.checkout_data .checkout_login .next_button,
+.checkout_form .checkout_user_info .next_button,
+.checkout_data .checkout_user_info .next_button {
+  margin-top: 35px;
+  text-align: right;
+}
+.checkout_form .checkout_login .next_button a,
+.checkout_data .checkout_login .next_button a,
+.checkout_form .checkout_user_info .next_button a,
+.checkout_data .checkout_user_info .next_button a {
+  color: #fff;
+  background-color: #df1e30;
+  padding: 15px 25px;
+  margin-right: 10px;
+  border: 1px solid #df1e30;
+}
+.checkout_form .checkout_login .next_button a:hover,
+.checkout_data .checkout_login .next_button a:hover,
+.checkout_form .checkout_user_info .next_button a:hover,
+.checkout_data .checkout_user_info .next_button a:hover {
+  color: #df1e30;
+  background-color: #fff;
+}
 .checkout_form .checkout_login .validate,
 .checkout_data .checkout_login .validate,
 .checkout_form .checkout_user_info .validate,

@@ -457,415 +457,196 @@
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="#">Каталог товаров</a></li>
-                            <li class="breadcrumb-item"><a href="#">Мужская</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Футболки</li>
+                            <li class="breadcrumb-item active" aria-current="page">Ввод данных</li>
                         </ol>
                     </nav>
                 </div>
             </div>
         </div>
-    </section>
-<!-- Category -->
-    <section class="wrapper">
+    </section>   
+    
+    <section class="checkout_form">
         <div class="container">
-            <div class="row titles_top">
-                <div class="col-md-6 col-12 my-auto">
-                    <h1 class="category_title">
-                        Футболки
-                    </h1>
-                </div>
-                <div class="col-md-3 col-6 sort righted my-auto">
-                    <p>Сортировка:</p>
-                </div>
-                <div class="col-md-3 col-6 my-auto">
-                    <select class="form-control-sm custom-select">
-                        <option selected>все товары</option>
-                        <option value="1">от дешевых к дорогим</option>
-                        <option value="2">от дорогих к дешевым</option>
-                        <option value="3">популярные</option>
-                        <option value="4">новинки</option>
-                        <option value="5">акционные</option>
-                        <option value="6">по рейтингу</option>
-                    </select>
+            <div class="row checkout_titles">
+                <div class="col-12 lefted">
+                    <h1>Ввод данных</h1>
                 </div>
             </div>
-            <div class="row filter_wrapper">
-                <div class="col-md-2">
-                    <select class="form-control-sm custom-select">
-                        <option selected>БРЕНД</option>
-                        <option value="1">Abercrombie&Fitch</option>
-                        <option value="2">NPC</option>
-                        <option value="3">Roots Of Fight</option>
-                        <option value="4">Nike</option>
-                        <option value="5">Power System</option>
-                        <option value="6">RYU</option>
-                        <option value="7">Under Armour</option>
-                    </select>
-                </div>
-                <div class="col-md-1">
-                    <select class="form-control-sm custom-select">
-                        <option selected>РАЗМЕР</option>
-                        <option value="1">XS</option>
-                        <option value="2">S</option>
-                        <option value="3">M</option>
-                        <option value="4">L</option>
-                        <option value="5">XL</option>
-                        <option value="6">XXL</option>
-                        <option value="7">XXXL</option>
-                    </select>
-                </div>
-                <div class="col-md-2">
-                    <select class="form-control-sm custom-select">
-                        <option selected>ТИП ПОШИВА</option>
-                        <option value="1">A</option>
-                        <option value="2">B</option>
-                        <option value="3">C</option>
-                        <option value="4">D</option>
-                        <option value="5">E</option>
-                    </select>
-                </div>
-                <div class="col-md-2">
-                    <select class="form-control-sm custom-select">
-                        <option selected>ПЛОТНОСТЬ</option>
-                        <option value="1">A</option>
-                        <option value="2">B</option>
-                        <option value="3">C</option>
-                        <option value="4">D</option>
-                        <option value="5">E</option>
-                    </select>
-                </div>
-                <div class="col-md-2">
-                    <select class="form-control-sm custom-select">
-                        <option selected>МАТЕРИАЛ</option>
-                        <option value="1">A</option>
-                        <option value="2">B</option>
-                        <option value="3">C</option>
-                        <option value="4">D</option>
-                        <option value="5">E</option>
-                    </select>
-                </div>
-                <div class="col-md-1">
-                    <select class="form-control-sm custom-select">
-                        <option selected>ЦВЕТ</option>
-                        <option value="1">A</option>
-                        <option value="2">B</option>
-                        <option value="3">C</option>
-                        <option value="4">D</option>
-                        <option value="5">E</option>
-                    </select>
-                </div>
-                <div class="col-md-2">
-                    <select class="form-control-sm custom-select">
-                        <option selected>ПРИМЕНЕНИЕ</option>
-                        <option value="1">A</option>
-                        <option value="2">B</option>
-                        <option value="3">C</option>
-                        <option value="4">D</option>
-                        <option value="5">E</option>
-                    </select>
-                </div>
-            </div>
-            <div class="row category_items">
-                <div class="col-md-3 col-sm-6 col-6">
-                    <div class="thumb-wrapper">
-                        <div class="img-box">
-                            <a href="item.html">
-                                <img src="images/items/t-shirt.png" class="img-responsive img-fluid" alt="">
-                            </a>
-                        </div>
-                        <div class="thumb-content">
-                            <a href="item.html"><h4>Рубашка поло Nike Grey XXL</h4></a>
-                            <p class="item-price">Цена: <strike>256 грн.</strike><span>198 грн.</span></p>
-                            <div class="add_to_cart">
-                                <a href="#" class="btn"><i class="fas fa-shopping-cart"></i>Купить</a>
-                                <a href="#" class="hrt"><i class="far fa-heart"></i></a>
-                            </div>
-                            <div class="quick_view">
-                                <a href="" data-toggle="modal" data-target="#quick_view1"><i class="fa fa-search"></i></a>
+            <div class="row checkout_login">
+                <div class="col-lg-6">
+                    <p class="login_info">Если у вас есть учётная запись, авторизуйтесь, используя 
+                        адрес электронной почты (email).</p>
+                    <form>
+                        <div class="form-group row">
+                            <label for="inputEmail3" class="col-lg-4 col-form-label">Логин <span class="validate">*</span></label>
+                            <div class="col-lg-8">
+                              <input type="email" class="form-control" id="inputEmail3" placeholder="Введите Ваш email">
                             </div>
                         </div>
-                    </div>
-                    <!-- Modal -->
-                    <div class="modal fade" id="quick_view1" tabindex="-1" role="dialog" aria-labelledby="quick_view1Title"
-                        aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h4 class="modal-title" id="quick_view1Title">Быстрый просмотр товара</h4>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">×</span>
-                                    </button>
+                        <div class="form-group row">
+                            <label for="inputPassword3" class="col-lg-4 col-form-label">Пароль <span class="validate">*</span></label>
+                            <div class="col-lg-8">
+                              <input type="password" class="form-control" id="inputPassword3" placeholder="Введите Ваш пароль">
+                              <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="gridCheck1">
+                                    <label class="form-check-label" for="gridCheck1">
+                                      Запомнить меня
+                                    </label>
                                 </div>
-                                <div class="modal-body">
-                                    <div class="row">
-                                        <div class="col-5">
-                                            <img src="images/items/t-shirt.png" class="img-responsive img-fluid" alt="">
-                                        </div>
-                                        <div class="col-7 variations">
-                                            <h5>Рубашка поло Nike Grey XXL</h5>
-                                            <p>Код товара: 524873</p>
-                                            <p class="item-price">Цена: <strike>256 грн.</strike><span>198 грн.</span></p>
-                                            <form class="form-horizontal " method="post" action="">
-                                                <div class="form-group">
-                                                    <div class="btn-group btn-group-justified" data-toggle="buttons">
-                                                        <label class="btn btn-primary active">
-                                                            <input type="radio" name="options" id="option1" autocomplete="off" checked>S
-                                                        </label>
-                                                        <label class="btn btn-primary">
-                                                            <input type="radio" name="options" id="option2" autocomplete="off">M
-                                                        </label>
-                                                        <label class="btn btn-primary">
-                                                            <input type="radio" name="options" id="option3" autocomplete="off">L
-                                                        </label>
-                                                        <label class="btn btn-primary">
-                                                            <input type="radio" name="options" id="option4" autocomplete="off">XL
-                                                        </label>
-                                                        <label class="btn btn-primary">
-                                                            <input type="radio" name="options" id="option5" autocomplete="off">XXL
-                                                        </label>
-                                                        <label class="btn btn-primary">
-                                                            <input type="radio" name="options" id="option6" autocomplete="off">3XL
-                                                        </label>
-                                                        <label class="btn btn-primary">
-                                                            <input type="radio" name="options" id="option7" autocomplete="off">4XL
-                                                        </label>
-                                                    </div>
-                                                </div>
-                                            </form>
-                                            <div class="add_to_cart">
-                                                <a href="#" class="btn"><i class="fas fa-shopping-cart"></i>Купить</a>
-                                                <a href="#" class="hrt"><i class="far fa-heart"></i></a>
-                                            </div>
-                                        </div>
-                                        <div class="col-12 more_details centered">
-                                            <a href="item.html">Просмотеть детали...</a>
-                                        </div>
+                            </div>
+                        </div>
+                        <div class="form-group row login_button righted">
+                            <div class="col-lg-12">
+                                <div class="log_button">
+                                    <a href="#" class="submit_login">Вход <i class="fas fa-angle-right"></i></a>
+                                </div>
+                                <div class="authorization righted">
+                                    <a href="#">Забыли пароль?</a>
+                                    <p>Нет аккаунта? <a href="#">Зарегистрироваться</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-lg-6 checkout_items">
+                    <p class="collapsed_card righted">
+                        <a class="btn" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            Просмотреть заказ
+                        </a>
+                    </p>
+                    <div class="collapse" id="collapseExample">
+                    <div class="card-body">
+                        <p class="bold">Всего товаров: <span>3 шт.</span></p>
+                        <hr>
+                            <div class="row">
+                                    <img src="images/items/t-shirt.png" alt="">
+                                    <ul>
+                                        <li>
+                                            <a href="#">Рубашка поло Nike Grey XXL</a>
+                                        </li>
+                                        <li>Размер: <span>XXL</span></li>
+                                        <li>Цвет: <span>Серый</span></li>
+                                        <li>Кол-во: <span>1 шт.</span></li>
+                                        <li>ЦЕНА: <span>198 грн.</span></li>
+                                    </ul>
+                                </div>
+                                <div class="row">
+                                    <img src="images/items/t-shirt.png" alt="">
+                                    <ul>
+                                        <li>
+                                            <a href="#">Рубашка поло Nike Grey XXL</a>
+                                        </li>
+                                        <li>Размер: <span>XXL</span></li>
+                                        <li>Цвет: <span>Серый</span></li>
+                                        <li>Кол-во: <span>1 шт.</span></li>
+                                        <li>ЦЕНА: <span>198 грн.</span></li>
+                                    </ul>
+                                </div>
+                                <div class="row">
+                                    <img src="images/items/t-shirt.png" alt="">
+                                    <ul>
+                                        <li>
+                                            <a href="#">Рубашка поло Nike Grey XXL</a>
+                                        </li>
+                                        <li>Размер: <span>XXL</span></li>
+                                        <li>Цвет: <span>Серый</span></li>
+                                        <li>Кол-во: <span>1 шт.</span></li>
+                                        <li>ЦЕНА: <span>198 грн.</span></li>
+                                    </ul>
+                                </div>
+                                <div class="row summ righted">
+                                    <div class="col-lg-12">
+                                        <p>СУММА: <span>594 грн.</span></p>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-6">
-                    <div class="thumb-wrapper">
-                        <div class="img-box">
-                            <a href="#">
-                                <img src="images/items/t-shirt.png" class="img-responsive img-fluid" alt="">
-                            </a>
-                        </div>
-                        <div class="thumb-content">
-                            <a href="#"><h4>Рубашка поло Nike Grey XXL</h4></a>
-                            <p class="item-price">Цена: <strike>256 грн.</strike><span>198 грн.</span></p>
-                            <div class="add_to_cart">
-                                <a href="#" class="btn"><i class="fas fa-shopping-cart"></i>Купить</a>
-                                <a href="#" class="hrt"><i class="far fa-heart"></i></a>
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-6">
-                    <div class="thumb-wrapper">
-                        <div class="img-box">
-                            <a href="#">
-                                <img src="images/items/t-shirt.png" class="img-responsive img-fluid" alt="">
-                            </a>
-                        </div>
-                        <div class="thumb-content">
-                            <a href="#"><h4>Рубашка поло Nike Grey XXL</h4></a>
-                            <p class="item-price">Цена: <strike>256 грн.</strike><span>198 грн.</span></p>
-                            <div class="add_to_cart">
-                                <a href="#" class="btn"><i class="fas fa-shopping-cart"></i>Купить</a>
-                                <a href="#" class="hrt"><i class="far fa-heart"></i></a>
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-6">
-                    <div class="thumb-wrapper">
-                        <div class="img-box">
-                            <a href="#">
-                                <img src="images/items/t-shirt.png" class="img-responsive img-fluid" alt="">
-                            </a>
-                        </div>
-                        <div class="thumb-content">
-                            <a href="#"><h4>Рубашка поло Nike Grey XXL</h4></a>
-                            <p class="item-price">Цена: <strike>256 грн.</strike><span>198 грн.</span></p>
-                            <div class="add_to_cart">
-                                <a href="#" class="btn"><i class="fas fa-shopping-cart"></i>Купить</a>
-                                <a href="#" class="hrt"><i class="far fa-heart"></i></a>
-                                
-                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="row category_items">
-                <div class="col-md-3 col-sm-6 col-6">
-                    <div class="thumb-wrapper">
-                        <div class="img-box">
-                            <a href="#">
-                                <img src="images/items/t-shirt.png" class="img-responsive img-fluid" alt="">
-                            </a>
-                        </div>
-                        <div class="thumb-content">
-                            <a href="#"><h4>Рубашка поло Nike Grey XXL</h4></a>
-                            <p class="item-price">Цена: <strike>256 грн.</strike><span>198 грн.</span></p>
-                            <div class="add_to_cart">
-                                <a href="#" class="btn"><i class="fas fa-shopping-cart"></i>Купить</a>
-                                <a href="#" class="hrt"><i class="far fa-heart"></i></a>
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-6">
-                    <div class="thumb-wrapper">
-                        <div class="img-box">
-                            <a href="#">
-                                <img src="images/items/t-shirt.png" class="img-responsive img-fluid" alt="">
-                            </a>
-                        </div>
-                        <div class="thumb-content">
-                            <a href="#"><h4>Рубашка поло Nike Grey XXL</h4></a>
-                            <p class="item-price">Цена: <strike>256 грн.</strike><span>198 грн.</span></p>
-                            <div class="add_to_cart">
-                                <a href="#" class="btn"><i class="fas fa-shopping-cart"></i>Купить</a>
-                                <a href="#" class="hrt"><i class="far fa-heart"></i></a>
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-6">
-                    <div class="thumb-wrapper">
-                        <div class="img-box">
-                            <a href="#">
-                                <img src="images/items/t-shirt.png" class="img-responsive img-fluid" alt="">
-                            </a>
-                        </div>
-                        <div class="thumb-content">
-                            <a href="#"><h4>Рубашка поло Nike Grey XXL</h4></a>
-                            <p class="item-price">Цена: <strike>256 грн.</strike><span>198 грн.</span></p>
-                            <div class="add_to_cart">
-                                <a href="#" class="btn"><i class="fas fa-shopping-cart"></i>Купить</a>
-                                <a href="#" class="hrt"><i class="far fa-heart"></i></a>
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-6">
-                    <div class="thumb-wrapper">
-                        <div class="img-box">
-                            <a href="#">
-                                <img src="images/items/t-shirt.png" class="img-responsive img-fluid" alt="">
-                            </a>
-                        </div>
-                        <div class="thumb-content">
-                            <a href="#"><h4>Рубашка поло Nike Grey XXL</h4></a>
-                            <p class="item-price">Цена: <strike>256 грн.</strike><span>198 грн.</span></p>
-                            <div class="add_to_cart">
-                                <a href="#" class="btn"><i class="fas fa-shopping-cart"></i>Купить</a>
-                                <a href="#" class="hrt"><i class="far fa-heart"></i></a>
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row category_items">
-                <div class="col-md-3 col-sm-6 col-6">
-                    <div class="thumb-wrapper">
-                        <div class="img-box">
-                            <a href="#">
-                                <img src="images/items/t-shirt.png" class="img-responsive img-fluid" alt="">
-                            </a>
-                        </div>
-                        <div class="thumb-content">
-                            <a href="#"><h4>Рубашка поло Nike Grey XXL</h4></a>
-                            <p class="item-price">Цена: <strike>256 грн.</strike><span>198 грн.</span></p>
-                            <div class="add_to_cart">
-                                <a href="#" class="btn"><i class="fas fa-shopping-cart"></i>Купить</a>
-                                <a href="#" class="hrt"><i class="far fa-heart"></i></a>
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-6">
-                    <div class="thumb-wrapper">
-                        <div class="img-box">
-                            <a href="#">
-                                <img src="images/items/t-shirt.png" class="img-responsive img-fluid" alt="">
-                            </a>
-                        </div>
-                        <div class="thumb-content">
-                            <a href="#"><h4>Рубашка поло Nike Grey XXL</h4></a>
-                            <p class="item-price">Цена: <strike>256 грн.</strike><span>198 грн.</span></p>
-                            <div class="add_to_cart">
-                                <a href="#" class="btn"><i class="fas fa-shopping-cart"></i>Купить</a>
-                                <a href="#" class="hrt"><i class="far fa-heart"></i></a>
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-6">
-                    <div class="thumb-wrapper">
-                        <div class="img-box">
-                            <a href="#">
-                                <img src="images/items/t-shirt.png" class="img-responsive img-fluid" alt="">
-                            </a>
-                        </div>
-                        <div class="thumb-content">
-                            <a href="#"><h4>Рубашка поло Nike Grey XXL</h4></a>
-                            <p class="item-price">Цена: <strike>256 грн.</strike><span>198 грн.</span></p>
-                            <div class="add_to_cart">
-                                <a href="#" class="btn"><i class="fas fa-shopping-cart"></i>Купить</a>
-                                <a href="#" class="hrt"><i class="far fa-heart"></i></a>
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-6">
-                    <div class="thumb-wrapper">
-                        <div class="img-box">
-                            <a href="#">
-                                <img src="images/items/t-shirt.png" class="img-responsive img-fluid" alt="">
-                            </a>
-                        </div>
-                        <div class="thumb-content">
-                            <a href="#"><h4>Рубашка поло Nike Grey XXL</h4></a>
-                            <p class="item-price">Цена: <strike>256 грн.</strike><span>198 грн.</span></p>
-                            <div class="add_to_cart">
-                                <a href="#" class="btn"><i class="fas fa-shopping-cart"></i>Купить</a>
-                                <a href="#" class="hrt"><i class="far fa-heart"></i></a>
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row paginations">
+        </div>
+    </section>
+
+    <section class="checkout_data">
+        <div class="container">
+            <div class="row checkout_titles">
                 <div class="col-lg-12">
-                        <nav aria-label="Page navigation">
-                                <ul class="pagination justify-content-center">
-                                  <li class="page-item disabled">
-                                    <a class="page-link" href="#" tabindex="-1">Страницы:</a>
-                                  </li>
-                                  <li class="page-item disabled"><a class="page-link" href="#">1</a></li>
-                                  <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                  <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                  <li class="page-item">
-                                    <a class="page-link" href="#">Показать все</a>
-                                  </li>
-                                </ul>
-                              </nav>
+                    <h3>Оформить без регистрации</h3>
                 </div>
             </div>
+            <form>
+                <div class="row checkout_user_info">
+                    <div class="col-lg-6">
+                        <div class="form-group row">
+                            <label for="first_name" class="col-lg-4 col-form-labe1">Имя <span class="validate">*</span></label>
+                            <div class="col-lg-8">
+                                <input type="text" class="form-control" id="input_text" placeholder="Введите Ваше имя">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="last_name" class="col-lg-4 col-form-label">Фамилия <span class="validate">*</span></label>
+                            <div class="col-lg-8">
+                                <input type="text" class="form-control" id="input_text" placeholder="Введите Вашу фамилию">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="phone_numb" class="col-lg-4 col-form-label">Телефон <span class="validate">*</span></label>
+                            <div class="col-lg-8">
+                                <input type="text" class="form-control" id="input_text" placeholder="Введите Ваш телефон">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="data_email" class="col-lg-4 col-form-label">Email</label>
+                            <div class="col-lg-8">
+                                <input type="text" class="form-control" id="input_text" placeholder="Введите Ваш email">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="gridCheck1">
+                                    <label class="form-check-label" for="gridCheck1">
+                                        Хочу получать рассылку
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="delivery_info" class="col-lg-4 col-form-label">Способ доставки</span></label>
+                            <div class="col-lg-8">
+                                <input type="text" class="form-control" id="input_text" placeholder="Укажите информацию">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="city" class="col-lg-4 col-form-label">Город</label>
+                            <div class="col-lg-8">
+                                <input type="text" class="form-control" id="input_text" placeholder="Укажите город доставки">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="delivery_place" class="col-lg-4 col-form-label">№ склада</label>
+                            <div class="col-lg-8">
+                                <input type="text" class="form-control" id="input_text" placeholder="№ склада перевозчика">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="pay_info" class="col-lg-4 col-form-label">Способ оплаты</label>
+                            <div class="col-lg-8">
+                                <input type="text" class="form-control" id="input_text" placeholder="Укажите информацию">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="promocode" class="col-lg-4 col-form-label">Промо-код</label>
+                            <div class="col-lg-8">
+                                <input type="text" class="form-control" id="input_text" placeholder="Укажите Ваш промо-код">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 user_comments">
+                        <div class="form-group">
+                            <label for="checkout_description" class="col-lg-12 col-form-labe1">Комментарий к заказу</label>
+                            <div class="col-lg-12">
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
         </div>
     </section>
 
@@ -897,7 +678,7 @@
             </div>
         </div>
     </section>
-
+    
     <footer class="desktop_footer">
         <div class="container">
             <div class="row">
@@ -1094,4 +875,5 @@
     <script src="js/megamenu.js"></script>
     <script src="https://unpkg.com/ionicons@4.4.6/dist/ionicons.js"></script>
 </body>
+
 </html>

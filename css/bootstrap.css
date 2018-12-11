@@ -5430,7 +5430,7 @@ button.close {
   position: relative;
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
-  padding: 0 5px 0 5px;
+  padding: 0 20px 0 20px;
 }
 
 .modal-footer {
@@ -5462,7 +5462,7 @@ button.close {
 
 @media (min-width: 576px) {
   .modal-dialog {
-    max-width: 500px;
+    max-width: 600px;
     margin: 1.75rem auto;
   }
   .modal-dialog-centered {
