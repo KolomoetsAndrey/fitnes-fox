@@ -924,6 +924,42 @@ h1 {
 .checkout_data {
   margin-bottom: 30px;
 }
+.checkout_form .checkout_data .delivery_data,
+.checkout_data .checkout_data .delivery_data {
+  color: #444;
+  margin-left: 15px;
+  font-size: 18px;
+}
+.checkout_form .checkout_data .delivery_comments,
+.checkout_data .checkout_data .delivery_comments {
+  margin-top: 25px;
+}
+.checkout_form .checkout_data .confirm,
+.checkout_data .checkout_data .confirm {
+  margin-top: 25px;
+}
+.checkout_form .checkout_data .confirm a,
+.checkout_data .checkout_data .confirm a {
+  color: #fff;
+  border: 1px solid #df1e30;
+  background-color: #df1e30;
+  text-decoration: none;
+  padding: 15px 25px;
+}
+.checkout_form .checkout_data .confirm a:hover,
+.checkout_data .checkout_data .confirm a:hover {
+  color: #df1e30;
+  background-color: #fff;
+}
+.checkout_form .checkout_data a,
+.checkout_data .checkout_data a {
+  color: #000;
+  text-decoration: underline;
+}
+.checkout_form .checkout_data a:hover,
+.checkout_data .checkout_data a:hover {
+  color: #df1e30;
+}
 .checkout_form .form-control,
 .checkout_data .form-control {
   font-size: 14px;
@@ -1039,6 +1075,18 @@ h1 {
 .checkout_form .checkout_user_info .user_comments .form-control,
 .checkout_data .checkout_user_info .user_comments .form-control {
   height: 250px;
+}
+.checkout_form .checkout_items .promo,
+.checkout_data .checkout_items .promo {
+  margin-top: 25px;
+}
+.checkout_form .checkout_items .promo .card,
+.checkout_data .checkout_items .promo .card {
+  border: none;
+}
+.checkout_form .checkout_items .promo .card .form-control,
+.checkout_data .checkout_items .promo .card .form-control {
+  height: auto;
 }
 .checkout_form .checkout_items .collapsed_card a,
 .checkout_data .checkout_items .collapsed_card a {
