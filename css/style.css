@@ -945,6 +945,7 @@ h1 {
 .checkout_form .checkout_data .confirm,
 .checkout_data .checkout_data .confirm {
   margin-top: 25px;
+  margin-bottom: 50px;
 }
 .checkout_form .checkout_data .confirm a,
 .checkout_data .checkout_data .confirm a {
@@ -985,6 +986,24 @@ h1 {
   text-transform: uppercase;
   font-size: 22px;
   margin-bottom: 5px;
+}
+.checkout_form .checkout_login,
+.checkout_data .checkout_login,
+.checkout_form .checkout_user_info,
+.checkout_data .checkout_user_info {
+  margin-bottom: 50px;
+}
+.checkout_form .checkout_login .vrt_divider,
+.checkout_data .checkout_login .vrt_divider,
+.checkout_form .checkout_user_info .vrt_divider,
+.checkout_data .checkout_user_info .vrt_divider {
+  width: 1px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 65px;
+  margin-bottom: 60px;
+  border-left: 1px solid #e5e5e5;
 }
 .checkout_form .checkout_login .login_info,
 .checkout_data .checkout_login .login_info,
@@ -1096,6 +1115,10 @@ h1 {
 .checkout_form .checkout_items .promo .card .form-control,
 .checkout_data .checkout_items .promo .card .form-control {
   height: auto;
+}
+.checkout_form .checkout_items .card-body,
+.checkout_data .checkout_items .card-body {
+  padding: 26px 0 0 0;
 }
 .checkout_form .checkout_items .collapsed_card a,
 .checkout_data .checkout_items .collapsed_card a {
@@ -2033,6 +2056,12 @@ h1 {
   .brands .brands_images_mobile .carousel-item img {
     height: auto;
     width: auto;
+  }
+  .checkout_form .checkout_login .vrt_divider {
+    display: none;
+  }
+  .checkout_form .checkout_login .enter {
+    margin-top: 25px;
   }
 }
 @media only screen and (max-width: 575px) {

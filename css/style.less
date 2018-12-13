@@ -1151,6 +1151,7 @@ h1 {
 
         .confirm {
             margin-top: 25px;
+            margin-bottom: 50px;
             
             a {
                 color: #fff;
@@ -1195,7 +1196,18 @@ h1 {
     }
 
     .checkout_login, .checkout_user_info {
+        margin-bottom: 50px;
 
+        .vrt_divider {
+                width: 1px;
+                height: auto;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 65px;
+                margin-bottom: 60px;
+                border-left: 1px solid #e5e5e5;
+        }
+        
         .login_info {
             font-size: 16px;
             margin-bottom: 15px;
@@ -1287,6 +1299,10 @@ h1 {
                     height: auto;
                 }
             }
+        }
+
+        .card-body {
+            padding: 26px 0 0 0;
         }
 
         .collapsed_card {
@@ -2409,6 +2425,18 @@ h1 {
                     height: auto;
                     width: auto;
                 }
+            }
+        }
+    }
+
+    .checkout_form {
+        .checkout_login {
+            .vrt_divider {
+                display: none;
+            }
+
+            .enter {
+                margin-top: 25px;
             }
         }
     }
