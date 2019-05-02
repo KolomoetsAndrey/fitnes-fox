@@ -1510,10 +1510,14 @@ h1 {
   font-size: 12px;
   color: #6c6c6c;
 }
-.our_contacts .our_contacts_form .form-control {
+.our_contacts .our_contacts_form input {
   border-radius: 10px;
   margin-top: 10px;
   height: 47px;
+}
+.our_contacts .our_contacts_form textarea {
+  border-radius: 10px;
+  margin-top: 10px;
 }
 .our_contacts .our_contacts_form .submit_btn {
   margin-top: 15px;
