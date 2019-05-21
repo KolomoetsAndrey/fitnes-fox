@@ -80,10 +80,12 @@
             </div>
         </div>
     </section>
+    
+    <!-- Autocomplete -->
     <div class="collapse searchcollapse" id="collapseSubmenu">
         <div class="card card-body">
             <form class="form-inline d-flex justify-content-center">
-                <input class="form-control" type="search" placeholder="Введите поисковое слово" aria-label="Search">
+                <input name="mobileAutocomplete" id="mobileAutocomplete" class="form-control" type="search" placeholder="Введите поисковое слово" aria-label="Search">
                 <button class="btn" type="submit">Поиск</button>
             </form>
         </div>
@@ -100,8 +102,8 @@
                     <p class="slogan">брендовая спортивная одежда</p>
                 </div>
                 <div class="col-sm-7 searching">
-                    <form class="form-inline ">
-                        <input class="form-control form-control-sm mr-3" type="text" placeholder="Введите поисковое слово в этом поле..." aria-label="Search">
+                    <form class="form-inline">
+                        <input name="desktopAutocomplete" id="desktopAutocomplete" data-provide="typeahead" autocomplete="off" name="query" id="query" class="form-control typeahead form-control-sm mr-3" type="text" placeholder="Введите поисковое слово в этом поле..." aria-label="Search">
                         <i class="fas fa-search" aria-hidden="true"></i>
                     </form>
                 </div>
@@ -1374,6 +1376,7 @@
         </div>
     </footer>
     <script src="js/vendor/jquery.min.js"></script>
+    <script src="js/autocomplete.js"></script>
     <script src="js/bootstrap.bundle.js"></script>
     <script src="js/bootstrap.js"></script>
     <script type="text/javascript" src="js/jquery.touchSwipe.js"></script>
