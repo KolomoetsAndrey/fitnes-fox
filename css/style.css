@@ -521,7 +521,7 @@ h1 {
 .wrapper .category_items {
   margin: 50px 0 50px 0;
 }
-.wrapper .category_items .thumb-wrapper .quick_view {
+.wrapper .category_items .the_items_card .quick_view {
   width: 83%;
   text-align: center;
   padding: 0;
@@ -532,13 +532,13 @@ h1 {
   z-index: 1000;
   transition: all .3s ease 0s;
 }
-.wrapper .category_items .thumb-wrapper .quick_view a {
+.wrapper .category_items .the_items_card .quick_view a {
   color: #df1e30;
   border: 1px solid #df1e30;
   padding: 5px;
   border-radius: 5px;
 }
-.wrapper .category_items .thumb-wrapper:hover .quick_view {
+.wrapper .category_items .the_items_card:hover .quick_view {
   opacity: 1;
   top: 30%;
 }
@@ -589,6 +589,10 @@ h1 {
 }
 .wrapper .paginations {
   margin-bottom: 75px;
+}
+/* Category Items Fix */
+.categories .category_items .the_items_card {
+  margin-bottom: 30px;
 }
 /* Iems Card */
 .item_card {
@@ -1189,13 +1193,19 @@ h1 {
   font-size: 26px;
   margin-left: 10px;
 }
+/* Новый вид карточки товара */
+.the_items_card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 /* Carousel */
 .carousel .item,
 .wrapper .item,
 .new_items_mobile .item,
 .hits_items_mobile .item {
-  max-height: 442px;
-  padding-top: 5px;
+  height: 100%;
+  padding: 5px;
   text-align: center;
   overflow: hidden;
 }
@@ -1300,18 +1310,24 @@ h1 {
   border-color: #df1e30;
   box-shadow: none;
 }
-.carousel .thumb-wrapper,
-.wrapper .thumb-wrapper,
-.new_items_mobile .thumb-wrapper,
-.hits_items_mobile .thumb-wrapper {
-  text-align: center;
+.carousel .the_items_card,
+.wrapper .the_items_card,
+.new_items_mobile .the_items_card,
+.hits_items_mobile .the_items_card {
   transition: ease-in-out 0.2s;
 }
-.carousel .thumb-wrapper:hover,
-.wrapper .thumb-wrapper:hover,
-.new_items_mobile .thumb-wrapper:hover,
-.hits_items_mobile .thumb-wrapper:hover {
+.carousel .the_items_card:hover,
+.wrapper .the_items_card:hover,
+.new_items_mobile .the_items_card:hover,
+.hits_items_mobile .the_items_card:hover {
   box-shadow: 0 0 0 1px #c6c6c6;
+}
+.carousel .thumb-name,
+.wrapper .thumb-name,
+.new_items_mobile .thumb-name,
+.hits_items_mobile .thumb-name {
+  padding: 10px 5px;
+  text-align: left;
 }
 .carousel .thumb-content,
 .wrapper .thumb-content,

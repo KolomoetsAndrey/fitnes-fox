@@ -632,7 +632,8 @@ h1 {
     .category_items {
         margin: 50px 0 50px 0;
 
-        .thumb-wrapper {
+        //Замена класса для quick view
+        .the_items_card {
             .quick_view {
                 width: 83%;
                 text-align: center;
@@ -654,7 +655,8 @@ h1 {
             }
         }
 
-        .thumb-wrapper:hover .quick_view {
+        //Замена класса для quick view
+        .the_items_card:hover .quick_view {
             opacity: 1;
             top: 30%;
         }
@@ -721,6 +723,15 @@ h1 {
 
     .paginations {
         margin-bottom: 75px;
+    }
+}
+
+/* Category Items Fix */
+.categories {
+    .category_items {
+        .the_items_card {
+            margin-bottom: 30px;
+        }
     }
 }
 
@@ -1385,11 +1396,20 @@ h1 {
 
 }
 
+/* Новый вид карточки товара */
+.the_items_card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 /* Carousel */
 .carousel, .wrapper, .new_items_mobile, .hits_items_mobile  {
     .item {
-        max-height: 442px;
-        padding-top: 5px;
+        //max-height: 442px;
+        height: 100%;
+        //padding-top: 5px;
+        padding: 5px;
         text-align: center;
         overflow: hidden;
 
@@ -1463,13 +1483,20 @@ h1 {
         box-shadow: none;
     }
 
-    .thumb-wrapper {
-        text-align: center;
+    // замена класса при наведении
+    .the_items_card {
+        //text-align: center;
         transition: ease-in-out .2s;
     }
 
-    .thumb-wrapper:hover {
+    .the_items_card:hover {
         box-shadow: 0 0 0 1px #c6c6c6;
+    }
+
+    // Вынесение названия продуктов в отдельный див
+    .thumb-name {
+        padding: 10px 5px;
+        text-align: left;
     }
 
     .thumb-content {
