@@ -332,6 +332,10 @@ h1 {
 .menu .first_column {
   margin-left: 10%;
 }
+.menu .sixth_column {
+  float: right;
+  margin-right: 18%;
+}
 .menu > ul > li > ul > li > ul {
   display: block;
   padding: 0;
