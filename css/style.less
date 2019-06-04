@@ -608,6 +608,22 @@ h1 {
     .titles_top {
         border-bottom: 2px solid #6c6c6c;
         height: 80px;
+
+        .btn {
+            color: #000;
+            background: #FFF;
+            border: 1px solid #e7eaed;
+            border-radius: 0;
+        }
+
+        .bootstrap-select:not(.input-group-btn),
+            .bootstrap-select[class*="col-"] {
+            display: flex;
+        }
+
+        .active {
+            margin-bottom: 0;
+        }
     }
     .filters {
         text-align: right;
@@ -620,6 +636,40 @@ h1 {
         .col-md-1, .col-md-2 {
             padding-right: 2px;
             padding-left: 2px;
+        }
+
+        select {
+
+        }
+
+        .btn {
+            color: #000;
+            background: #FFF;
+            border: 1px solid #e7eaed;
+            border-radius: 0;
+        }
+
+        .selected {
+            margin-bottom: 0;
+        }
+
+        .dropdown-toggle {
+            padding: 2px;
+        }
+
+        .dropdown-menu {
+            width: auto;
+            border-radius: 0;
+        }
+
+        .bootstrap-select:not(.input-group-btn),
+        .bootstrap-select[class*="col-"] {
+            display: flex;
+        }
+
+        .bootstrap-select .dropdown-toggle .filter-option-inner-inner {
+            color: #aeb2c2;
+            font-weight: 200;
         }
     
     }

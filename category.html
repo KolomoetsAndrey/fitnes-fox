@@ -23,6 +23,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/bootstrap-select.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/ionicons.min.css">
     
@@ -477,8 +478,8 @@
                 <div class="col-md-3 col-6 sort righted my-auto">
                     <p>Сортировка:</p>
                 </div>
-                <div class="col-md-3 col-6 my-auto">
-                    <select class="form-control-sm custom-select">
+                <div class="col-md-3 col-6 my-auto items_sort">
+                    <select class="form-control-sm">
                         <option selected>все товары</option>
                         <option value="1">от дешевых к дорогим</option>
                         <option value="2">от дорогих к дешевым</option>
@@ -491,8 +492,9 @@
             </div>
             <div class="row filter_wrapper">
                 <div class="col-md-2">
-                    <select class="form-control-sm custom-select">
-                        <option selected>БРЕНД</option>
+                    <p class="text-center">Бренды</p>
+                    <select class="form-control-sm selectpicker" multiple>
+                        <option value></option>
                         <option value="1">Abercrombie&Fitch</option>
                         <option value="2">NPC</option>
                         <option value="3">Roots Of Fight</option>
@@ -502,9 +504,10 @@
                         <option value="7">Under Armour</option>
                     </select>
                 </div>
-                <div class="col-md-1">
-                    <select class="form-control-sm custom-select">
-                        <option selected>РАЗМЕР</option>
+                <div class="col-md-2">
+                    <p class="text-center">Размер</p>
+                    <select class="form-control-sm selectpicker" multiple>
+                        <option value></option>
                         <option value="1">XS</option>
                         <option value="2">S</option>
                         <option value="3">M</option>
@@ -515,8 +518,9 @@
                     </select>
                 </div>
                 <div class="col-md-2">
-                    <select class="form-control-sm custom-select">
-                        <option selected>ТИП ПОШИВА</option>
+                    <p class="text-center">Тип пошива</p>
+                    <select class="form-control-sm selectpicker" multiple>
+                        <option value></option>
                         <option value="1">A</option>
                         <option value="2">B</option>
                         <option value="3">C</option>
@@ -525,8 +529,9 @@
                     </select>
                 </div>
                 <div class="col-md-2">
-                    <select class="form-control-sm custom-select">
-                        <option selected>ПЛОТНОСТЬ</option>
+                    <p class="text-center">Плотность</p>
+                    <select class="form-control-sm selectpicker" multiple>
+                        <option value></option>
                         <option value="1">A</option>
                         <option value="2">B</option>
                         <option value="3">C</option>
@@ -535,18 +540,9 @@
                     </select>
                 </div>
                 <div class="col-md-2">
-                    <select class="form-control-sm custom-select">
-                        <option selected>МАТЕРИАЛ</option>
-                        <option value="1">A</option>
-                        <option value="2">B</option>
-                        <option value="3">C</option>
-                        <option value="4">D</option>
-                        <option value="5">E</option>
-                    </select>
-                </div>
-                <div class="col-md-1">
-                    <select class="form-control-sm custom-select">
-                        <option selected>ЦВЕТ</option>
+                    <p class="text-center">Материал</p>
+                    <select class="form-control-sm selectpicker" multiple>
+                        <option value></option>
                         <option value="1">A</option>
                         <option value="2">B</option>
                         <option value="3">C</option>
@@ -555,8 +551,20 @@
                     </select>
                 </div>
                 <div class="col-md-2">
-                    <select class="form-control-sm custom-select">
-                        <option selected>ПРИМЕНЕНИЕ</option>
+                    <p class="text-center">Цвет</p>
+                    <select class="form-control-sm selectpicker" multiple>
+                        <option value></option>
+                        <option value="1">A</option>
+                        <option value="2">B</option>
+                        <option value="3">C</option>
+                        <option value="4">D</option>
+                        <option value="5">E</option>
+                    </select>
+                </div>
+                <div class="col-md-2">
+                    <p class="text-center">Применение</p>
+                    <select class="form-control-sm selectpicker" multiple>
+                        <option value></option>
                         <option value="1">A</option>
                         <option value="2">B</option>
                         <option value="3">C</option>
@@ -1008,6 +1016,8 @@
     <script src="js/vendor/jquery.min.js"></script>
     <script src="js/bootstrap.bundle.js"></script>
     <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap-select.min.js"></script>
+    <script src="js/i18n/defaults-ru_RU.min.js"></script>
     <script type="text/javascript" src="js/jquery.touchSwipe.js"></script>
     <script>
             $(document).ready(function() {  
@@ -1023,6 +1033,14 @@
                 });
             });
     </script>
+
+    <!--MultipleSelect Script-->
+    <script>
+        $(function () {
+            $('select').selectpicker();
+        });
+    </script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
     <script src="js/megamenu.js"></script>
     <script src="https://unpkg.com/ionicons@4.4.6/dist/ionicons.js"></script>
