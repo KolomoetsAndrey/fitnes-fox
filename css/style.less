@@ -261,6 +261,10 @@ h1 {
     }
 
     .menu {
+
+        .logo_mobiled {
+            display: none;
+        }
         .menu_brands {
             .brands {
                 .menu_brand_logo {
@@ -293,7 +297,7 @@ h1 {
 
 .menu-mobile {
     display: none;
-    padding: 20px 25px;
+    padding: 20px;
     color: #df1e30;
 
     img {
@@ -306,7 +310,7 @@ h1 {
     font-family: "Ionicons";
     font-size: 2.5rem;
     padding: 0;
-    float: right;
+    //float: right;
     position: relative;
     top: 50%;
     -webkit-transform: translateY(-25%);
@@ -2193,6 +2197,22 @@ h1 {
             padding-left: 0;
 
             .menu {
+
+                .mobile_block {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+                .logo_mobiled {
+                    display: block;
+                    margin-left: 20px;
+
+                    .navbar_logo {
+                        width: 80%;
+                    }
+                }
+
                 .menu_brands {
                     .brands {
                         .menu_brand_logo {
@@ -2745,7 +2765,7 @@ h1 {
 
 @media only screen and (max-width: 411px) {
     .menu-mobile {
-        padding: 20px 75px;
+        padding: 20px;
     }
 
     .searchcollapse {
@@ -2763,7 +2783,7 @@ h1 {
     }
 
     .menu-mobile {
-        padding: 20px 55px;
+        padding: 20px;
     }
     
     .slider {

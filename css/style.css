@@ -207,6 +207,9 @@ h1 {
   width: 200%;
   max-width: 290px;
 }
+.megamenu .menu .logo_mobiled {
+  display: none;
+}
 .megamenu .menu .menu_brands .brands .menu_brand_logo {
   max-width: 100%;
   padding-right: 10%;
@@ -228,7 +231,7 @@ h1 {
 }
 .menu-mobile {
   display: none;
-  padding: 20px 25px;
+  padding: 20px;
   color: #df1e30;
 }
 .menu-mobile img {
@@ -239,7 +242,6 @@ h1 {
   font-family: "Ionicons";
   font-size: 2.5rem;
   padding: 0;
-  float: right;
   position: relative;
   top: 50%;
   -webkit-transform: translateY(-25%);
@@ -1874,6 +1876,18 @@ h1 {
     padding-right: 0;
     padding-left: 0;
   }
+  .megamenu .container .menu .mobile_block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .megamenu .container .menu .logo_mobiled {
+    display: block;
+    margin-left: 20px;
+  }
+  .megamenu .container .menu .logo_mobiled .navbar_logo {
+    width: 80%;
+  }
   .megamenu .container .menu .menu_brands .brands .menu_brand_logo {
     display: none;
   }
@@ -2258,7 +2272,7 @@ h1 {
 }
 @media only screen and (max-width: 411px) {
   .menu-mobile {
-    padding: 20px 75px;
+    padding: 20px;
   }
   .searchcollapse .form-control {
     width: 55%;
@@ -2271,7 +2285,7 @@ h1 {
     font-size: 21px;
   }
   .menu-mobile {
-    padding: 20px 55px;
+    padding: 20px;
   }
   .slider .carousel-indicators li {
     top: 30px;
