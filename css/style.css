@@ -522,6 +522,20 @@ h1 {
   margin-top: 25px;
   margin-bottom: 50px;
 }
+.wrapper .filter_wrapper .filter_title h3 {
+  display: none;
+  margin: 15px 0 30px 0;
+}
+.wrapper .filter_wrapper .filter_title h3 a {
+  padding: 15px;
+  border: 1px solid #e2e2e2;
+}
+.wrapper .filter_wrapper .filter_title h3 a i {
+  margin-left: 20%;
+}
+.wrapper .filter_wrapper .filter_title .collapse:not(.show) {
+  display: block;
+}
 .wrapper .filter_wrapper .col-md-1,
 .wrapper .filter_wrapper .col-md-2 {
   padding-right: 2px;
@@ -2138,6 +2152,12 @@ h1 {
   .new_items_mobile h4,
   .hits_items_mobile h4 {
     font-size: 15px;
+  }
+  .wrapper .filter_wrapper .filter_title h3 {
+    display: block;
+  }
+  .wrapper .filter_wrapper .filter_title .collapse:not(.show) {
+    display: none;
   }
   .wrapper .titles_top {
     height: 100%;

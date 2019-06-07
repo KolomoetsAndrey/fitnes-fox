@@ -637,13 +637,30 @@ h1 {
         margin-top: 25px;
         margin-bottom: 50px;
 
+        .filter_title {
+
+            h3 {
+                display: none;
+                margin: 15px 0 30px 0;
+
+                a {
+                    padding: 15px;
+                    border: 1px solid #e2e2e2;
+
+                    i {
+                        margin-left: 20%;
+                    }
+                }
+            }
+
+            .collapse:not(.show) {
+                display: block;
+            }
+        }
+
         .col-md-1, .col-md-2 {
             padding-right: 2px;
             padding-left: 2px;
-        }
-
-        select {
-
         }
 
         .btn {
@@ -2543,6 +2560,18 @@ h1 {
     }
 
     .wrapper {
+        .filter_wrapper {
+            .filter_title {
+                h3 {
+                    display: block;
+                }
+
+                .collapse:not(.show) {
+                    display: none;
+                }
+            }
+        }
+
         .titles_top {
             height: 100%;
 
