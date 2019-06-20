@@ -28,6 +28,7 @@
     <link rel="stylesheet" href="css/ionicons.min.css">
     
     <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Exo+2:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap&subset=cyrillic" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
         crossorigin="anonymous">
@@ -491,10 +492,13 @@
                 </div>
             </div>
             <div class="row filter_wrapper">
-                <div class="col-12 search_word">
+                <div class="col-12 col-md-8 col-lg-10 search_word">
                     <h4>
                         Текст поиска: <span class="words">Любой текст поиска</span> <i type="button" class="fas fa-times close_btn"></i>
                     </h4>
+                </div>
+                <div class="col-12 col-md-4 col-lg-2 show_more_top">
+                    <button>Показать еще <i class="fas fa-sync-alt"></i></button>
                 </div>
                 <div class="col-12 filter_title text-center">
                     <h3>
@@ -590,6 +594,11 @@
             </div>
             <div class="row category_items justify-content-center">
                 <div class="col-md-3 col-sm-6 col-6 the_items_card">
+                    <div class="labels">
+                        <p class="new">
+                            Новый<br>товар
+                        </p>
+                    </div>
                     <div class="thumb-wrapper">
                         <div class="img-box">
                             <a href="item.html">
@@ -623,7 +632,12 @@
                                 </div>
                                 <div class="modal-body">
                                     <div class="row">
-                                        <div class="col-5">
+                                        <div class="col-5 item_img_modal">
+                                            <div class="labels">
+                                                <p class="new">
+                                                    Топ<br>продаж
+                                                </p>
+                                            </div>
                                             <img src="images/items/t-shirt.png" class="img-responsive img-fluid" alt="">
                                         </div>
                                         <div class="col-7 variations">
@@ -672,6 +686,11 @@
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-6 col-6 the_items_card">
+                    <div class="labels">
+                        <p class="new">
+                            Топ<br>продаж
+                        </p>
+                    </div>
                     <div class="thumb-wrapper">
                         <div class="img-box">
                             <a href="#">
@@ -803,6 +822,9 @@
                             <a href="#" class="hrt"><i class="far fa-heart"></i></a>
                         </div>
                     </div>
+                </div>
+                <div class="col-12 show_more_bottom">
+                    <button>Показать еще <i class="fas fa-sync-alt"></i></button>
                 </div>
             </div>
             <div class="row paginations">
